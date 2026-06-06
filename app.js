@@ -223,7 +223,7 @@ const spirometryHtml = `
 `;
 
 const questions = [
-    {
+{
         id: 1,
         category: "Gastro-entérologie",
         type: "qcm",
@@ -238,7 +238,7 @@ const questions = [
         draftCorrectAnswers: ["a", "c", "d", "e"],
         explanation: "Les indications à l'exploration d'une diarrhée aiguë incluent la persistance au-delà de 7 jours, le syndrome dysentérique (sang/pus dans les selles), l'échec d'un traitement bien conduit, les âges extrêmes (nourrissons, personnes âgées) et les terrains d'immunodépression."
     },
-    {
+{
         id: 2,
         category: "Pneumologie - Cas Clinique 1 (Partie 1)",
         type: "text",
@@ -247,8 +247,85 @@ const questions = [
         modelAnswer: "La radiographie thoracique de face montre une opacité nodulaire ou de type nodule pulmonaire solitaire, bien circonscrite au niveau du champ pulmonaire moyen/supérieur droit (ou une image suspecte à typer). Il n'y a pas d'épanchement pleural liquide ou gazeux associé. Les apex et les culs-de-sac costo-diaphragmatiques sont libres.",
         explanation: "L'interprétation doit noter la présence d'une opacité ronde/nodulaire isolée (nodule solitaire) et l'absence d'autres anomalies pleurales ou parenchymateuses majeures."
     },
-    {
+{
         id: 3,
+        category: "Pneumologie - Cas Clinique 1 (Partie 2)",
+        type: "text",
+        text: "Un patient âgé de 56 ans, vient vous voir en consultation, et a ramené avec lui une radiographie thoracique réalisée dans le cadre d'un bilan d'embauche. Quels sont les éléments de l'anamnèse (Facteurs de risque, Antécédents, Histoire de la maladie) qui vont vous orienter vers vos hypothèses diagnostiques ?",
+        image: "images/fig_56yo_xray.jpg",
+        modelAnswer: "Les éléments clés à rechercher à l'anamnèse sont :
+- Le statut tabagique (actif/sevré, calcul de l'exposition en paquets-années).
+- Des antécédents personnels ou familiaux de cancer (pulmonaire ou autre).
+- Des expositions professionnelles à des carcinogènes (amiante, silice, métaux lourds).
+- La présence de symptômes cliniques infracliniques (perte de poids, fatigue, toux récente, expectorations, hémoptysie minime, fébricule).
+- Des antécédents d'infections respiratoires sévères ou de tuberculose (cicatrice parenchymateuse).",
+        explanation: "Ces facteurs de risque et antécédents permettent d'évaluer la probabilité de malignité du nodule découvert fortuitement."
+    },
+{
+        id: 4,
+        category: "Pneumologie - Cas Clinique 1 (Partie 3)",
+        type: "text",
+        text: "Un patient âgé de 56 ans, vient vous voir en consultation, et a ramené avec lui une radiographie thoracique réalisée dans le cadre d'un bilan d'embauche. Sachant que c'est un sujet non-tabagique, sans antécédents notables, asymptomatique, et dont l'examen clinique est sans particularités ; quel est votre diagnostic le plus probable, et quelle est votre conduite à tenir ?",
+        image: "images/fig_56yo_xray.jpg",
+        modelAnswer: "Le diagnostic le plus probable est un nodule pulmonaire solitaire bénin (probablement un hamartochondrome ou un granulome cicatriciel infectieux). 
+Conduite à tenir :
+1. Récupérer des clichés radiographiques antérieurs pour comparer (un nodule stable depuis plus de 2 ans est hautement suspect de bénignité).
+2. Réaliser un scanner (TDM) thoracique haute résolution sans et avec injection pour mieux caractériser le nodule (taille exacte, présence de calcifications en pop-corn typiques de l'hamartochondrome, densité de graisse).
+3. En l'absence de critères de malignité évidents au scanner, instaurer une surveillance radiologique stricte (scanner à 3, 6, 12 et 24 mois).",
+        explanation: "Chez un sujet jeune asymptomatique non tabagique sans antécédent, la bénignité d'un nodule solitaire est la règle. La caractérisation scanographique et la surveillance sont recommandées."
+    },
+{
+        id: 5,
+        category: "Pneumologie - Cas Clinique Hémoptysies (Partie 1)",
+        type: "text",
+        text: "Un patient se présente à votre consultation pour des hémoptysies. La Rx thoracique est la suivante (Ci-dessous). Quelles sont vos hypothèses diagnostiques ?",
+        image: "images/fig_hemoptysis_xray.jpg",
+        modelAnswer: "Les hypothèses diagnostiques principales devant ce tableau d'hémoptysie associé à une opacité excavée ou infiltrante apicale sont :
+1. Tuberculose pulmonaire active (caverne tuberculeuse).
+2. Cancer bronchopulmonaire primitif nécrosé (surtout chez le sujet tabagique).
+3. Aspergillome pulmonaire (greffe sur cavité préexistante).
+4. Abcès du poumon excavé.",
+        explanation: "Une lésion apicale excavée chez un patient présentant des hémoptysies doit faire évoquer en priorité la tuberculose et le cancer bronchique nécrosé."
+    },
+{
+        id: 6,
+        category: "Pneumologie - Cas Clinique Hémoptysies (Partie 2)",
+        type: "qcu",
+        text: "Un patient se présente à votre consultation pour des hémoptysies. La Rx thoracique montre des anomalies. Parmi les propositions suivantes, quel est l'examen complémentaire le plus pertinent que vous allez prescrire en premier ? (une seule réponse)",
+        image: "images/fig_hemoptysis_xray.jpg",
+        options: [
+            { id: "a", text: "Un examen direct des expectorations (crachats)" },
+            { id: "b", text: "Une TDM Thoracique (Scanner)" },
+            { id: "c", text: "Une radiographie thoracique de profil" },
+            { id: "d", text: "Une échographie cardiaque" },
+            { id: "e", text: "Une fibroscopie bronchique" }
+        ],
+        draftCorrectAnswer: "b",
+        explanation: "La TDM thoracique avec injection est l'examen clé en cas d'hémoptysie. Elle permet de localiser le saignement, d'analyser le parenchyme (recherche de caverne, de tumeur, de DDB) et de guider un éventuel geste de radio-embolisation."
+    },
+{
+        id: 7,
+        category: "Pneumologie - Cas Clinique 2 (Partie 1)",
+        type: "text",
+        text: "Patient de 66 ans présentant des épisodes récurrents de toux et de sibilances depuis l'âge de 30 ans. Examen clinique : normal. Sur la base des données cliniques et spirométriques (Ci-dessous), quel est votre diagnostic ?",
+        htmlContent: spirometryHtml,
+        modelAnswer: "Le diagnostic le plus probable est un Asthme persistant à début précoce (ou asthme de l'adulte), possiblement compliqué d'un trouble ventilatoire obstructif fixe ou partiellement réversible avec le temps (remodelage bronchique), ou un syndrome d'association Asthme-BPCO (ACO). L'histoire de toux et sibilances depuis l'âge de 30 ans est très caractéristique d'un profil asthmatique.",
+        explanation: "La triade toux, sibilances récurrentes depuis l'âge jeune et examen intercritique normal évoque fortement l'asthme."
+    },
+{
+        id: 8,
+        category: "Pneumologie - Cas Clinique 2 (Partie 2)",
+        type: "text",
+        text: "Patient de 66 ans présentant des épisodes récurrents de toux et de sibilances depuis l'âge de 30 ans. Examen clinique : normal. Interpréter cette spirométrie (Ci-dessous) :",
+        htmlContent: spirometryHtml,
+        modelAnswer: "L'interprétation de la courbe spirométrique et des valeurs chiffrées montre :
+1. Présence d'un trouble ventilatoire obstructif (TVO) caractérisé par un rapport de Tiffeneau (VEMS/CVF) abaissé en dessous de la limite inférieure de la normale (ou < 70% en valeur absolue).
+2. Analyse de la sévérité de l'obstruction selon le niveau du VEMS en % de la valeur théorique.
+3. Recherche d'une réversibilité significative après inhalation de 400 µg de Salbutamol (augmentation du VEMS de plus de 12% ET de plus de 200 ml par rapport aux valeurs initiales). Si réversible, cela conforte le diagnostic d'asthme. Si non réversible ou partiellement réversible, cela peut évoquer une BPCO ou un asthme vieilli remodelé.",
+        explanation: "La spirométrie est le maître-examen pour diagnostiquer et quantifier un trouble ventilatoire obstructif dans les pathologies respiratoires chroniques."
+    },
+{
+        id: 9,
         category: "Pneumologie - Tuberculose",
         type: "qcu_image",
         text: "Parmi les radiographies suivantes, quel est l'aspect LE plus évocateur de tuberculose ?",
@@ -262,44 +339,8 @@ const questions = [
         draftCorrectAnswer: "b",
         explanation: "L'option B montre généralement des lésions infiltratives ou caverneuses apicales bilatérales typiques de la tuberculose pulmonaire active (caverne tuberculeuse)."
     },
-    {
-        id: 4,
-        category: "Pneumologie - Cas Clinique Hémoptysies (Partie 1)",
-        type: "text",
-        text: "Un patient se présente à votre consultation pour des hémoptysies. La Rx thoracique est la suivante (Ci-dessous). Quelles sont vos hypothèses diagnostiques ?",
-        image: "images/fig_hemoptysis_xray.jpg",
-        modelAnswer: "Les hypothèses diagnostiques principales devant ce tableau d'hémoptysie associé à une opacité excavée ou infiltrante apicale sont :\n1. Tuberculose pulmonaire active (caverne tuberculeuse).\n2. Cancer bronchopulmonaire primitif nécrosé (surtout chez le sujet tabagique).\n3. Aspergillome pulmonaire (greffe sur cavité préexistante).\n4. Abcès du poumon excavé.",
-        explanation: "Une lésion apicale excavée chez un patient présentant des hémoptysies doit faire évoquer en priorité la tuberculose et le cancer bronchique nécrosé."
-    },
-    {
-        id: 5,
-        category: "Pneumologie - Cas Clinique 1 (Partie 2)",
-        type: "text",
-        text: "Un patient âgé de 56 ans, vient vous voir en consultation, et a ramené avec lui une radiographie thoracique réalisée dans le cadre d'un bilan d'embauche. Quels sont les éléments de l'anamnèse (Facteurs de risque, Antécédents, Histoire de la maladie) qui vont vous orienter vers vos hypothèses diagnostiques ?",
-        image: "images/fig_56yo_xray.jpg",
-        modelAnswer: "Les éléments clés à rechercher à l'anamnèse sont :\n- Le statut tabagique (actif/sevré, calcul de l'exposition en paquets-années).\n- Des antécédents personnels ou familiaux de cancer (pulmonaire ou autre).\n- Des expositions professionnelles à des carcinogènes (amiante, silice, métaux lourds).\n- La présence de symptômes cliniques infracliniques (perte de poids, fatigue, toux récente, expectorations, hémoptysie minime, fébricule).\n- Des antécédents d'infections respiratoires sévères ou de tuberculose (cicatrice parenchymateuse).",
-        explanation: "Ces facteurs de risque et antécédents permettent d'évaluer la probabilité de malignité du nodule découvert fortuitement."
-    },
-    {
-        id: 6,
-        category: "Pneumologie - Cas Clinique 2 (Partie 1)",
-        type: "text",
-        text: "Patient de 66 ans présentant des épisodes récurrents de toux et de sibilances depuis l'âge de 30 ans. Examen clinique : normal. Sur la base des données cliniques et spirométriques (Ci-dessous), quel est votre diagnostic ?",
-        htmlContent: spirometryHtml,
-        modelAnswer: "Le diagnostic le plus probable est un Asthme persistant à début précoce (ou asthme de l'adulte), possiblement compliqué d'un trouble ventilatoire obstructif fixe ou partiellement réversible avec le temps (remodelage bronchique), ou un syndrome d'association Asthme-BPCO (ACO). L'histoire de toux et sibilances depuis l'âge de 30 ans est très caractéristique d'un profil asthmatique.",
-        explanation: "La triade toux, sibilances récurrentes depuis l'âge jeune et examen intercritique normal évoque fortement l'asthme."
-    },
-    {
-        id: 7,
-        category: "Pneumologie - Cas Clinique 2 (Partie 2)",
-        type: "text",
-        text: "Patient de 66 ans présentant des épisodes récurrents de toux et de sibilances depuis l'âge de 30 ans. Examen clinique : normal. Interpréter cette spirométrie (Ci-dessous) :",
-        htmlContent: spirometryHtml,
-        modelAnswer: "L'interprétation de la courbe spirométrique et des valeurs chiffrées montre :\n1. Présence d'un trouble ventilatoire obstructif (TVO) caractérisé par un rapport de Tiffeneau (VEMS/CVF) abaissé en dessous de la limite inférieure de la normale (ou < 70% en valeur absolue).\n2. Analyse de la sévérité de l'obstruction selon le niveau du VEMS en % de la valeur théorique.\n3. Recherche d'une réversibilité significative après inhalation de 400 µg de Salbutamol (augmentation du VEMS de plus de 12% ET de plus de 200 ml par rapport aux valeurs initiales). Si réversible, cela conforte le diagnostic d'asthme. Si non réversible ou partiellement réversible, cela peut évoquer une BPCO ou un asthme vieilli remodelé.",
-        explanation: "La spirométrie est le maître-examen pour diagnostiquer et quantifier un trouble ventilatoire obstructif dans les pathologies respiratoires chroniques."
-    },
-    {
-        id: 8,
+{
+        id: 10,
         category: "Pneumologie - Thérapeutique",
         type: "matching",
         text: "Devant les différents types de dispositifs inhalés présentés dans l'image ci-dessous, veuillez associer chaque numéro au dispositif correspondant :",
@@ -324,8 +365,8 @@ const questions = [
         },
         explanation: "Le dispositif 1 est un inhalateur de poudre sèche de type Turbuhaler. Le dispositif 2 est également un inhalateur de poudre sèche de type Diskus. Le dispositif 3 est un aérosol doseur pressurisé classique (pMDI). Le dispositif 4 montre un aérosol doseur relié à une chambre d'inhalation (spacer), dispositif indispensable pour optimiser la déposition pulmonaire et réduire les effets secondaires chez de nombreux patients."
     },
-    {
-        id: 9,
+{
+        id: 11,
         category: "Pneumologie",
         type: "qcm",
         text: "Devant une dyspnée aiguë, la présence d'hémoptysie doit évoquer : (Veuillez choisir AU MOINS UNE RÉPONSE)",
@@ -339,8 +380,8 @@ const questions = [
         draftCorrectAnswers: ["b", "c"],
         explanation: "Une dyspnée aiguë associée à une hémoptysie évoque en priorité une embolie pulmonaire (infarctus pulmonaire) ou une obstruction tumorale aiguë (cancer bronchique érodant un vaisseau)."
     },
-    {
-        id: 10,
+{
+        id: 12,
         category: "Hépato-gastro-entérologie",
         type: "qcm",
         text: "Parmi les étiologies suivantes, quelles sont celles qui peuvent être responsables d'une cytolyse chronique ?",
@@ -354,8 +395,8 @@ const questions = [
         draftCorrectAnswers: ["a", "c", "d", "e"],
         explanation: "La cytolyse chronique (augmentation des transaminases > 6 mois) peut être due à une hémochromatose, une dysthyroïdie (hyper/hypothyroïdie), une hépatite virale chronique B ou C, une stéatopathie métabolique, ou encore une maladie coeliaque. La leptospirose est une cause de cytolyse aiguë fébrile."
     },
-    {
-        id: 11,
+{
+        id: 13,
         category: "Pneumologie - Urgences",
         type: "qcm",
         text: "Patient de 50 ans se présentant aux urgences pour douleur thoracique d'installation brutale. Devant ce tableau clinique une radiographie thoracique de face a été demandée. Sur cette radiographie (Ci-dessous), on note :",
@@ -370,8 +411,8 @@ const questions = [
         draftCorrectAnswers: ["e"],
         explanation: "La radiographie montre une hyperclarté avasculaire occupant tout l'hémithorax gauche avec rétraction du poumon vers le hile (poumon collabé), typique d'un pneumothorax gauche compressif ou de grande abondance."
     },
-    {
-        id: 12,
+{
+        id: 14,
         category: "Pneumologie - Urgences",
         type: "qcm",
         text: "Patient de 45 ans se présentant aux urgences pour toux productive associée à une fièvre. Une radiographie thoracique de face a été demandée, complétée par une radiographie de profil. Sur ces radiographies (Ci-dessous), on note :",
@@ -386,8 +427,8 @@ const questions = [
         draftCorrectAnswers: ["a", "b"],
         explanation: "L'association d'une opacité triangulaire à limite supérieure nette (systématisée au lobe moyen) effaçant le bord droit du cœur sur la face, et d'un syndrome infectieux aigu, signe une pneumonie lobaire du lobe moyen (PFLA)."
     },
-    {
-        id: 13,
+{
+        id: 15,
         category: "Gastro-entérologie",
         type: "qcm",
         text: "Quels sont les éléments de gravité à rechercher devant une diarrhée aiguë ?",
@@ -401,8 +442,8 @@ const questions = [
         draftCorrectAnswers: ["b", "d", "e"],
         explanation: "Les critères de gravité d'une diarrhée aiguë incluent la déshydratation sévère, le sepsis (fièvre élevée ou hypothermie), l'immunodépression sous-jacente et les comorbidités (tares cardiaques, rénales) exposant au risque de décompensation."
     },
-    {
-        id: 14,
+{
+        id: 16,
         category: "Pneumologie",
         type: "qcm",
         text: "Parmi les propositions suivantes, quelles sont les étiologies de la dyspnée aiguë ?",
@@ -416,8 +457,8 @@ const questions = [
         draftCorrectAnswers: ["a", "b", "c", "e"],
         explanation: "La pneumonie, la décompensation de diabète avec acidose (hyperventilation de Kussmaul), l'exacerbation d'asthme et la sténose trachéale (par obstruction) sont des causes classiques de dyspnée aiguë. Un kyste hydatique non compliqué est généralement asymptomatique et de découverte fortuite."
     },
-    {
-        id: 15,
+{
+        id: 17,
         category: "Pneumologie - Diagnostics",
         type: "qcu",
         text: "Devant une dyspnée aiguë, la présence, dans les antécédents, d'épisodes récurrents de dyspnée expiratoire et de sifflements, doit d'abord évoquer :",
@@ -431,8 +472,8 @@ const questions = [
         draftCorrectAnswer: "d",
         explanation: "Des épisodes récurrents de dyspnée sifflante paroxystique réversibles dans les antécédents sont la définition clinique classique de l'asthme, rendant l'exacerbation d'asthme le premier diagnostic à évoquer."
     },
-    {
-        id: 16,
+{
+        id: 18,
         category: "Pneumologie",
         type: "qcm",
         text: "Devant une dyspnée aiguë, la présence de sifflements thoraciques à l'auscultation doit évoquer :",
@@ -446,24 +487,8 @@ const questions = [
         draftCorrectAnswers: ["c"],
         explanation: "Les sibilants auscultatoires (sifflements) traduisent un bronchospasme ou une obstruction des voies aériennes de petit calibre, caractéristiques de l'exacerbation d'asthme ou de BPCO."
     },
-    {
-        id: 17,
-        category: "Pneumologie - Cas Clinique Hémoptysies (Partie 2)",
-        type: "qcu",
-        text: "Un patient se présente à votre consultation pour des hémoptysies. La Rx thoracique montre des anomalies. Parmi les propositions suivantes, quel est l'examen complémentaire le plus pertinent que vous allez prescrire en premier ? (une seule réponse)",
-        image: "images/fig_hemoptysis_xray.jpg",
-        options: [
-            { id: "a", text: "Un examen direct des expectorations (crachats)" },
-            { id: "b", text: "Une TDM Thoracique (Scanner)" },
-            { id: "c", text: "Une radiographie thoracique de profil" },
-            { id: "d", text: "Une échographie cardiaque" },
-            { id: "e", text: "Une fibroscopie bronchique" }
-        ],
-        draftCorrectAnswer: "b",
-        explanation: "La TDM thoracique avec injection est l'examen clé en cas d'hémoptysie. Elle permet de localiser le saignement, d'analyser le parenchyme (recherche de caverne, de tumeur, de DDB) et de guider un éventuel geste de radio-embolisation."
-    },
-    {
-        id: 18,
+{
+        id: 19,
         category: "Hépatologie",
         type: "qcu",
         text: "Le bilan sérologique à demander lors de la suspicion d'une hépatite aiguë B est composé de :",
@@ -477,8 +502,8 @@ const questions = [
         draftCorrectAnswer: "b",
         explanation: "Le diagnostic d'une hépatite aiguë B repose sur la mise en évidence simultanée de l'Ag HBs et des anticorps anti-HBc de type IgM (marqueurs de réplication aiguë)."
     },
-    {
-        id: 19,
+{
+        id: 20,
         category: "Gastro-entérologie",
         type: "qcm",
         text: "La diarrhée aiguë est définie cliniquement par :",
@@ -492,8 +517,8 @@ const questions = [
         draftCorrectAnswers: ["a", "e"],
         explanation: "La diarrhée aiguë est définie par l'émission de plus de 3 selles molles à liquides par jour, évoluant depuis moins de 4 semaines (souvent moins de 14 jours)."
     },
-    {
-        id: 20,
+{
+        id: 21,
         category: "Pneumologie - Sémiologie",
         type: "qcm",
         text: "Devant cette image de radiographie thoracique (Ci-dessous), on retient :",
@@ -508,16 +533,7 @@ const questions = [
         draftCorrectAnswers: ["d", "e"],
         explanation: "L'image montre une opacité totale et homogène de l'hémithorax gauche ('poumon blanc') avec refoulement du médiastin (trachée et cœur) vers la droite (côté sain/controlatéral), ce qui traduit un épanchement pleural liquide de très grande abondance avec distension."
     },
-    {
-        id: 21,
-        category: "Pneumologie - Cas Clinique 1 (Partie 3)",
-        type: "text",
-        text: "Un patient âgé de 56 ans, vient vous voir en consultation, et a ramené avec lui une radiographie thoracique réalisée dans le cadre d'un bilan d'embauche. Sachant que c'est un sujet non-tabagique, sans antécédents notables, asymptomatique, et dont l'examen clinique est sans particularités ; quel est votre diagnostic le plus probable, et quelle est votre conduite à tenir ?",
-        image: "images/fig_56yo_xray.jpg",
-        modelAnswer: "Le diagnostic le plus probable est un nodule pulmonaire solitaire bénin (probablement un hamartochondrome ou un granulome cicatriciel infectieux). \nConduite à tenir :\n1. Récupérer des clichés radiographiques antérieurs pour comparer (un nodule stable depuis plus de 2 ans est hautement suspect de bénignité).\n2. Réaliser un scanner (TDM) thoracique haute résolution sans et avec injection pour mieux caractériser le nodule (taille exacte, présence de calcifications en pop-corn typiques de l'hamartochondrome, densité de graisse).\n3. En l'absence de critères de malignité évidents au scanner, instaurer une surveillance radiologique stricte (scanner à 3, 6, 12 et 24 mois).",
-        explanation: "Chez un sujet jeune asymptomatique non tabagique sans antécédent, la bénignité d'un nodule solitaire est la règle. La caractérisation scanographique et la surveillance sont recommandées."
-    },
-    {
+{
         id: 22,
         category: "Hépatologie",
         type: "qcm",
@@ -532,7 +548,7 @@ const questions = [
         draftCorrectAnswers: ["b", "d"],
         explanation: "L'hépatite fulminante est définie par l'association d'une insuffisance hépatocellulaire sévère (TP < 20-30%) et de troubles neurologiques (encéphalopathie hépatique) survenant moins de 2 semaines après le début de l'ictère."
     },
-    {
+{
         id: 23,
         category: "Pneumologie - Technique radiologique",
         type: "matching_zones",
