@@ -253,12 +253,12 @@ const questions = [
         type: "text",
         text: "Un patient âgé de 56 ans, vient vous voir en consultation, et a ramené avec lui une radiographie thoracique réalisée dans le cadre d'un bilan d'embauche. Quels sont les éléments de l'anamnèse (Facteurs de risque, Antécédents, Histoire de la maladie) qui vont vous orienter vers vos hypothèses diagnostiques ?",
         image: "images/fig_56yo_xray.jpg",
-        modelAnswer: "Les éléments clés à rechercher à l'anamnèse sont :
+        modelAnswer: `Les éléments clés à rechercher à l'anamnèse sont :
 - Le statut tabagique (actif/sevré, calcul de l'exposition en paquets-années).
 - Des antécédents personnels ou familiaux de cancer (pulmonaire ou autre).
 - Des expositions professionnelles à des carcinogènes (amiante, silice, métaux lourds).
 - La présence de symptômes cliniques infracliniques (perte de poids, fatigue, toux récente, expectorations, hémoptysie minime, fébricule).
-- Des antécédents d'infections respiratoires sévères ou de tuberculose (cicatrice parenchymateuse).",
+- Des antécédents d'infections respiratoires sévères ou de tuberculose (cicatrice parenchymateuse).`,
         explanation: "Ces facteurs de risque et antécédents permettent d'évaluer la probabilité de malignité du nodule découvert fortuitement."
     },
 {
@@ -267,11 +267,11 @@ const questions = [
         type: "text",
         text: "Un patient âgé de 56 ans, vient vous voir en consultation, et a ramené avec lui une radiographie thoracique réalisée dans le cadre d'un bilan d'embauche. Sachant que c'est un sujet non-tabagique, sans antécédents notables, asymptomatique, et dont l'examen clinique est sans particularités ; quel est votre diagnostic le plus probable, et quelle est votre conduite à tenir ?",
         image: "images/fig_56yo_xray.jpg",
-        modelAnswer: "Le diagnostic le plus probable est un nodule pulmonaire solitaire bénin (probablement un hamartochondrome ou un granulome cicatriciel infectieux). 
+        modelAnswer: `Le diagnostic le plus probable est un nodule pulmonaire solitaire bénin (probablement un hamartochondrome ou un granulome cicatriciel infectieux). 
 Conduite à tenir :
 1. Récupérer des clichés radiographiques antérieurs pour comparer (un nodule stable depuis plus de 2 ans est hautement suspect de bénignité).
 2. Réaliser un scanner (TDM) thoracique haute résolution sans et avec injection pour mieux caractériser le nodule (taille exacte, présence de calcifications en pop-corn typiques de l'hamartochondrome, densité de graisse).
-3. En l'absence de critères de malignité évidents au scanner, instaurer une surveillance radiologique stricte (scanner à 3, 6, 12 et 24 mois).",
+3. En l'absence de critères de malignité évidents au scanner, instaurer une surveillance radiologique stricte (scanner à 3, 6, 12 et 24 mois).`,
         explanation: "Chez un sujet jeune asymptomatique non tabagique sans antécédent, la bénignité d'un nodule solitaire est la règle. La caractérisation scanographique et la surveillance sont recommandées."
     },
 {
@@ -280,11 +280,11 @@ Conduite à tenir :
         type: "text",
         text: "Un patient se présente à votre consultation pour des hémoptysies. La Rx thoracique est la suivante (Ci-dessous). Quelles sont vos hypothèses diagnostiques ?",
         image: "images/fig_hemoptysis_xray.jpg",
-        modelAnswer: "Les hypothèses diagnostiques principales devant ce tableau d'hémoptysie associé à une opacité excavée ou infiltrante apicale sont :
+        modelAnswer: `Les hypothèses diagnostiques principales devant ce tableau d'hémoptysie associé à une opacité excavée ou infiltrante apicale sont :
 1. Tuberculose pulmonaire active (caverne tuberculeuse).
 2. Cancer bronchopulmonaire primitif nécrosé (surtout chez le sujet tabagique).
 3. Aspergillome pulmonaire (greffe sur cavité préexistante).
-4. Abcès du poumon excavé.",
+4. Abcès du poumon excavé.`,
         explanation: "Une lésion apicale excavée chez un patient présentant des hémoptysies doit faire évoquer en priorité la tuberculose et le cancer bronchique nécrosé."
     },
 {
@@ -318,10 +318,10 @@ Conduite à tenir :
         type: "text",
         text: "Patient de 66 ans présentant des épisodes récurrents de toux et de sibilances depuis l'âge de 30 ans. Examen clinique : normal. Interpréter cette spirométrie (Ci-dessous) :",
         htmlContent: spirometryHtml,
-        modelAnswer: "L'interprétation de la courbe spirométrique et des valeurs chiffrées montre :
+        modelAnswer: `L'interprétation de la courbe spirométrique et des valeurs chiffrées montre :
 1. Présence d'un trouble ventilatoire obstructif (TVO) caractérisé par un rapport de Tiffeneau (VEMS/CVF) abaissé en dessous de la limite inférieure de la normale (ou < 70% en valeur absolue).
 2. Analyse de la sévérité de l'obstruction selon le niveau du VEMS en % de la valeur théorique.
-3. Recherche d'une réversibilité significative après inhalation de 400 µg de Salbutamol (augmentation du VEMS de plus de 12% ET de plus de 200 ml par rapport aux valeurs initiales). Si réversible, cela conforte le diagnostic d'asthme. Si non réversible ou partiellement réversible, cela peut évoquer une BPCO ou un asthme vieilli remodelé.",
+3. Recherche d'une réversibilité significative après inhalation de 400 µg de Salbutamol (augmentation du VEMS de plus de 12% ET de plus de 200 ml par rapport aux valeurs initiales). Si réversible, cela conforte le diagnostic d'asthme. Si non réversible ou partiellement réversible, cela peut évoquer une BPCO ou un asthme vieilli remodelé.`,
         explanation: "La spirométrie est le maître-examen pour diagnostiquer et quantifier un trouble ventilatoire obstructif dans les pathologies respiratoires chroniques."
     },
 {
