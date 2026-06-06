@@ -235,8 +235,8 @@ const questions = [
             { id: "d", text: "L'absence de réponse au traitement symptomatique" },
             { id: "e", text: "La présence d'un âge extrême" }
         ],
-        draftCorrectAnswers: ["a", "c", "d", "e"],
-        explanation: "Les indications à l'exploration d'une diarrhée aiguë incluent la persistance au-delà de 7 jours, le syndrome dysentérique (sang/pus dans les selles), l'échec d'un traitement bien conduit, les âges extrêmes (nourrissons, personnes âgées) et les terrains d'immunodépression."
+        draftCorrectAnswers: ["a", "b", "c", "d", "e"],
+        explanation: "Selon les recommandations du cours, les critères imposant une exploration complémentaire devant une diarrhée aiguë comprennent une durée prolongée (> 7 jours), la présence de fièvre ou d'hypothermie, du sang dans les selles, l'absence de réponse au traitement symptomatique, et un âge extrême."
     },
 {
         id: 2,
@@ -301,7 +301,7 @@ Conduite à tenir :
             { id: "e", text: "Une fibroscopie bronchique" }
         ],
         draftCorrectAnswer: "b",
-        explanation: "La TDM thoracique avec injection est l'examen clé en cas d'hémoptysie. Elle permet de localiser le saignement, d'analyser le parenchyme (recherche de caverne, de tumeur, de DDB) et de guider un éventuel geste de radio-embolisation."
+        explanation: "Pour des hémoptysies avec radiographie thoracique anormale suspectant un profil tumoral, le patient doit être adressé pour réaliser une TDM thoracique (Scanner) ou une fibroscopie bronchique. En cas de suspicion de tuberculose, un examen direct des expectorations est préconisé."
     },
 {
         id: 7,
@@ -376,8 +376,8 @@ Conduite à tenir :
             { id: "d", text: "Une pneumopathie infiltrante diffuse au stade de fibrose" },
             { id: "e", text: "Des séquelles diffuses de tuberculose" }
         ],
-        draftCorrectAnswers: ["b", "c"],
-        explanation: "Une dyspnée aiguë associée à une hémoptysie évoque en priorité une embolie pulmonaire (infarctus pulmonaire) ou une obstruction tumorale aiguë (cancer bronchique érodant un vaisseau)."
+        draftCorrectAnswers: ["b", "c", "e"],
+        explanation: "Dans la démarche diagnostique devant une dyspnée aiguë, la présence d'une hémoptysie doit orienter principalement vers une embolie pulmonaire (choix C), un processus tumoral (néoplasie, choix B) ou des séquelles pulmonaires post-tuberculeuses (choix E)."
     },
 {
         id: 12,
@@ -438,8 +438,8 @@ Conduite à tenir :
             { id: "d", text: "Un terrain d'immunodépression" },
             { id: "e", text: "La présence de tares associées (cardiaque, rénale...)" }
         ],
-        draftCorrectAnswers: ["b", "d", "e"],
-        explanation: "Les critères de gravité d'une diarrhée aiguë incluent la déshydratation sévère, le sepsis (fièvre élevée ou hypothermie), l'immunodépression sous-jacente et les comorbidités (tares cardiaques, rénales) exposant au risque de décompensation."
+        draftCorrectAnswers: ["b"],
+        explanation: "La présence de signes d'infection sévère (fièvre élevée ou hypothermie) constitue l'élément de gravité majeur justifiant des explorations urgentes."
     },
 {
         id: 16,
@@ -453,8 +453,8 @@ Conduite à tenir :
             { id: "d", text: "Un kyste hydatique du poumon sain non compliqué" },
             { id: "e", text: "Une sténose trachéale post-intubation" }
         ],
-        draftCorrectAnswers: ["a", "b", "c", "e"],
-        explanation: "La pneumonie, la décompensation de diabète avec acidose (hyperventilation de Kussmaul), l'exacerbation d'asthme et la sténose trachéale (par obstruction) sont des causes classiques de dyspnée aiguë. Un kyste hydatique non compliqué est généralement asymptomatique et de découverte fortuite."
+        draftCorrectAnswers: ["a", "b", "c"],
+        explanation: "Les causes majeures de dyspnée aiguë comprennent la pneumonie, l'exacerbation d'asthme et la décompensation acido-cétosique. Une sténose trachéale post-intubation (choix E) se présente plutôt sous un mode clinique subaigu ou chronique."
     },
 {
         id: 17,

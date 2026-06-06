@@ -1,0 +1,205 @@
+=== LISTE DES QUESTIONS ET CHOIX ===
+
+Question 1 - [Gastro-entérologie]
+Énoncé : On doit explorer (Biologie, Endoscopie, ...) une diarrhée aiguë quand elle est associée à au moins un des éléments suivants :
+Choix / Options :
+  - A. Une durée qui dépasse 7 jours
+  - B. La présence d'une hypothermie ou d'une fièvre
+  - C. La présence de sang dans les selles
+  - D. L'absence de réponse au traitement symptomatique
+  - E. La présence d'un âge extrême
+------------------------------------------------------------
+
+Question 2 - [Pneumologie - Cas Clinique 1 (Partie 1)]
+Énoncé : Un patient âgé de 56 ans, vient vous voir en consultation, et a ramené avec lui une radiographie thoracique (Ci-dessous) réalisée dans le cadre d'un bilan d'embauche. Veuillez interpréter cette radiographie :
+Type : Question rédigée (réponse libre)
+------------------------------------------------------------
+
+Question 3 - [Pneumologie - Cas Clinique 1 (Partie 2)]
+Énoncé : Un patient âgé de 56 ans, vient vous voir en consultation, et a ramené avec lui une radiographie thoracique réalisée dans le cadre d'un bilan d'embauche. Quels sont les éléments de l'anamnèse (Facteurs de risque, Antécédents, Histoire de la maladie) qui vont vous orienter vers vos hypothèses diagnostiques ?
+Type : Question rédigée (réponse libre)
+------------------------------------------------------------
+
+Question 4 - [Pneumologie - Cas Clinique 1 (Partie 3)]
+Énoncé : Un patient âgé de 56 ans, vient vous voir en consultation, et a ramené avec lui une radiographie thoracique réalisée dans le cadre d'un bilan d'embauche. Sachant que c'est un sujet non-tabagique, sans antécédents notables, asymptomatique, et dont l'examen clinique est sans particularités ; quel est votre diagnostic le plus probable, et quelle est votre conduite à tenir ?
+Type : Question rédigée (réponse libre)
+------------------------------------------------------------
+
+Question 5 - [Pneumologie - Cas Clinique Hémoptysies (Partie 1)]
+Énoncé : Un patient se présente à votre consultation pour des hémoptysies. La Rx thoracique est la suivante (Ci-dessous). Quelles sont vos hypothèses diagnostiques ?
+Type : Question rédigée (réponse libre)
+------------------------------------------------------------
+
+Question 6 - [Pneumologie - Cas Clinique Hémoptysies (Partie 2)]
+Énoncé : Un patient se présente à votre consultation pour des hémoptysies. La Rx thoracique montre des anomalies. Parmi les propositions suivantes, quel est l'examen complémentaire le plus pertinent que vous allez prescrire en premier ? (une seule réponse)
+Choix / Options :
+  - A. Un examen direct des expectorations (crachats)
+  - B. Une TDM Thoracique (Scanner)
+  - C. Une radiographie thoracique de profil
+  - D. Une échographie cardiaque
+  - E. Une fibroscopie bronchique
+------------------------------------------------------------
+
+Question 7 - [Pneumologie - Cas Clinique 2 (Partie 1)]
+Énoncé : Patient de 66 ans présentant des épisodes récurrents de toux et de sibilances depuis l'âge de 30 ans. Examen clinique : normal. Sur la base des données cliniques et spirométriques (Ci-dessous), quel est votre diagnostic ?
+Type : Question rédigée (réponse libre)
+------------------------------------------------------------
+
+Question 8 - [Pneumologie - Cas Clinique 2 (Partie 2)]
+Énoncé : Patient de 66 ans présentant des épisodes récurrents de toux et de sibilances depuis l'âge de 30 ans. Examen clinique : normal. Interpréter cette spirométrie (Ci-dessous) :
+Type : Question rédigée (réponse libre)
+------------------------------------------------------------
+
+Question 9 - [Pneumologie - Tuberculose]
+Énoncé : Parmi les radiographies suivantes, quel est l'aspect LE plus évocateur de tuberculose ?
+Choix / Options :
+  - A. Option A
+  - B. Option B
+  - C. Option C
+  - D. Option D
+------------------------------------------------------------
+
+Question 10 - [Pneumologie - Thérapeutique]
+Énoncé : Devant les différents types de dispositifs inhalés présentés dans l'image ci-dessous, veuillez associer chaque numéro au dispositif correspondant :
+Choix / Options :
+  - Éléments à associer : Dispositif 1, Dispositif 2, Dispositif 3, Dispositif 4
+  - Options possibles :
+  -   - Aérosol doseur pressurisé
+  -   - Nébuliseur
+  -   - Inhalateur de poudre sèche
+------------------------------------------------------------
+
+Question 11 - [Pneumologie]
+Énoncé : Devant une dyspnée aiguë, la présence d'hémoptysie doit évoquer : (Veuillez choisir AU MOINS UNE RÉPONSE)
+Choix / Options :
+  - A. Un syndrome obésité-hypoventilation
+  - B. Un processus tumoral envahissant la trachée
+  - C. Une embolie pulmonaire
+  - D. Une pneumopathie infiltrante diffuse au stade de fibrose
+  - E. Des séquelles diffuses de tuberculose
+------------------------------------------------------------
+
+Question 12 - [Hépato-gastro-entérologie]
+Énoncé : Parmi les étiologies suivantes, quelles sont celles qui peuvent être responsables d'une cytolyse chronique ?
+Choix / Options :
+  - A. Hémochromatose
+  - B. Leptospirose
+  - C. Dysthyroïdie
+  - D. Hépatite virale (B ou C)
+  - E. Maladie coeliaque
+------------------------------------------------------------
+
+Question 13 - [Pneumologie - Urgences]
+Énoncé : Patient de 50 ans se présentant aux urgences pour douleur thoracique d'installation brutale. Devant ce tableau clinique une radiographie thoracique de face a été demandée. Sur cette radiographie (Ci-dessous), on note :
+Choix / Options :
+  - A. Une ascension de la coupole diaphragmatique droite
+  - B. Des critères de qualité respectés
+  - C. Une pleurésie gauche de grande abondance
+  - D. Une opacité pulmonaire gauche, centrale, suspecte
+  - E. Un pneumothorax gauche de grande abondance
+------------------------------------------------------------
+
+Question 14 - [Pneumologie - Urgences]
+Énoncé : Patient de 45 ans se présentant aux urgences pour toux productive associée à une fièvre. Une radiographie thoracique de face a été demandée, complétée par une radiographie de profil. Sur ces radiographies (Ci-dessous), on note :
+Choix / Options :
+  - A. Une opacité pulmonaire lobaire moyenne systématisée
+  - B. Un diagnostic probable de pneumonie franche lobaire aiguë (PFLA)
+  - C. Une opacité pulmonaire lobaire inférieure droite
+  - D. Une clarté pulmonaire gauche
+  - E. Une opacité pulmonaire droite non systématisée
+------------------------------------------------------------
+
+Question 15 - [Gastro-entérologie]
+Énoncé : Quels sont les éléments de gravité à rechercher devant une diarrhée aiguë ?
+Choix / Options :
+  - A. Un âge jeune (adulte jeune)
+  - B. La présence de signes d'infection sévère (Fièvre > 39°C, Hypothermie, choc)
+  - C. La présence de signes de malabsorption
+  - D. Un terrain d'immunodépression
+  - E. La présence de tares associées (cardiaque, rénale...)
+------------------------------------------------------------
+
+Question 16 - [Pneumologie]
+Énoncé : Parmi les propositions suivantes, quelles sont les étiologies de la dyspnée aiguë ?
+Choix / Options :
+  - A. Une pneumonie
+  - B. Une décompensation acido-cétosique
+  - C. Une exacerbation d'asthme
+  - D. Un kyste hydatique du poumon sain non compliqué
+  - E. Une sténose trachéale post-intubation
+------------------------------------------------------------
+
+Question 17 - [Pneumologie - Diagnostics]
+Énoncé : Devant une dyspnée aiguë, la présence, dans les antécédents, d'épisodes récurrents de dyspnée expiratoire et de sifflements, doit d'abord évoquer :
+Choix / Options :
+  - A. Une exacerbation de BPCO
+  - B. Un kyste hydatique pulmonaire
+  - C. Un œdème de Quincke
+  - D. Une exacerbation d'asthme
+  - E. Une pneumopathie d'hypersensibilité
+------------------------------------------------------------
+
+Question 18 - [Pneumologie]
+Énoncé : Devant une dyspnée aiguë, la présence de sifflements thoraciques à l'auscultation doit évoquer :
+Choix / Options :
+  - A. Une pneumopathie infiltrante diffuse au stade de fibrose
+  - B. Une bronchectasie diffuse
+  - C. Une exacerbation de BPCO
+  - D. Une insuffisance respiratoire chronique restrictive
+  - E. Un syndrome obésité-hypoventilation
+------------------------------------------------------------
+
+Question 19 - [Hépatologie]
+Énoncé : Le bilan sérologique à demander lors de la suspicion d'une hépatite aiguë B est composé de :
+Choix / Options :
+  - A. Antigène HBs, Anticorps anti-HBc type IgM, Anticorps anti-HBs, ADN VHB
+  - B. Antigène HBs, Anticorps anti-HBc type IgM
+  - C. Antigène HBs, Anticorps anti-HBc type IgM, Anticorps anti-HBs
+  - D. Antigène HBs, Anticorps anti-HBc types IgM et IgG, Anticorps anti-HBs
+  - E. Antigène HBs seul
+------------------------------------------------------------
+
+Question 20 - [Gastro-entérologie]
+Énoncé : La diarrhée aiguë est définie cliniquement par :
+Choix / Options :
+  - A. La présence de selles liquidiennes ou molles
+  - B. La présence d'un syndrome dysentérique
+  - C. Une évacuation brutale et rapide
+  - D. La présence de selles graisseuses (stéatorrhée)
+  - E. Un nombre de selles supérieur à 3 par jour depuis moins de 4 semaines
+------------------------------------------------------------
+
+Question 21 - [Pneumologie - Sémiologie]
+Énoncé : Devant cette image de radiographie thoracique (Ci-dessous), on retient :
+Choix / Options :
+  - A. Un hémithorax opaque rétractile
+  - B. Parmi les diagnostics possibles, on a une atélectasie pulmonaire totale
+  - C. L'aspect est en faveur d'une pleurésie de moyenne abondance
+  - D. Un hémithorax opaque avec distension (déviation controlatérale du médiastin)
+  - E. Un poumon blanc (épanchement pleural liquidien de grande abondance)
+------------------------------------------------------------
+
+Question 22 - [Hépatologie]
+Énoncé : L'hépatite aiguë fulminante est caractérisée biologiquement ou cliniquement par :
+Choix / Options :
+  - A. La survenue d'une insuffisance rénale aiguë engageant le pronostic vital
+  - B. L'installation de troubles de la conscience (encéphalopathie hépatique)
+  - C. La survenue d'un syndrome hémorragique
+  - D. Un taux de prothrombine (TP) inférieur à 50% (ou plutôt < 20%)
+  - E. Une fièvre au-delà de 39°C
+------------------------------------------------------------
+
+Question 23 - [Pneumologie - Technique radiologique]
+Énoncé : Cette image (Ci-dessous) montre les zones anatomiques utilisées pour évaluer la qualité de la radiographie thoracique de face. Prière d'associer à chaque zone numérotée le critère de qualité correspondant :
+Choix / Options :
+  - Zones à associer : Zone 1, Zone 2, Zone 3, Zone 4, Zone 5, Zone 6, Zone 7
+  - Critères possibles :
+  -   - Centrage (Apophyses épineuses centrées entre les clavicules)
+  -   - Dégagement des apex (Clavicules projetées en dehors ou croisant le 3e espace)
+  -   - Dégagement des omoplates (Omoplates projetées en dehors des champs pulmonaires)
+  -   - Culs-de-sac costo-diaphragmatiques externes libres et pris
+  -   - Pénétrance correcte (Visualisation des vertèbres dorsales derrière le cœur)
+  -   - Temps inspiratoire correct (Au moins 6 arcs costaux antérieurs visibles)
+  -   - Symétrie / Orientation correcte
+------------------------------------------------------------
+
