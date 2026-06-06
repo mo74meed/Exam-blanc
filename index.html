@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Blanc - Sémiologie & Clinique</title>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- HEADER -->
+        <header class="app-header">
+            <div class="header-brand">
+                <button class="mobile-toggle" id="mobileToggle" title="Ouvrir le menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                <div>
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <div class="brand-icon">E</div>
+                        <h1 class="brand-title">EXAMEN BLANC</h1>
+                    </div>
+                    <span class="brand-subtitle">Sémiologie Médicale</span>
+                </div>
+            </div>
+
+            <div class="header-controls" id="headerControls">
+                <!-- Elapsed Timer -->
+                <div class="timer-box" title="Temps écoulé">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <span id="examTimer">00:00</span>
+                </div>
+
+                <!-- Dark/Light Mode Switcher -->
+                <button class="theme-toggle" id="themeToggle" title="Changer le thème">
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Submit copy -->
+            <button class="btn btn-success" id="submitExamBtn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                Soumettre ma copie
+            </button>
+        </header>
+
+        <!-- MAIN LAYOUT WRAPPER -->
+        <div class="main-wrapper" id="mainWrapper">
+            <!-- SIDEBAR -->
+            <aside class="app-sidebar">
+                <div class="sidebar-title">Progression</div>
+                <div class="progress-container">
+                    <div class="progress-info">
+                        <span id="progressCounter">0 sur 23 répondus</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill" id="progressFill"></div>
+                    </div>
+                </div>
+
+                <div class="sidebar-title">Questions</div>
+                <div class="question-grid" id="questionGrid">
+                    <!-- Cells dynamically rendered by JS -->
+                </div>
+
+                <!-- Legend of status colors -->
+                <div class="sidebar-legend">
+                    <div class="legend-item">
+                        <span class="legend-dot not-visited"></span>
+                        Non visitée
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-dot visited"></span>
+                        Visitée (sans réponse)
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-dot answered"></span>
+                        Répondue
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-dot flagged"></span>
+                        Signalée pour relecture
+                    </div>
+                </div>
+            </aside>
+
+            <!-- MAIN WORKSPACE -->
+            <main class="content-panel">
+                <div class="question-container">
+                    <!-- Active Question Card -->
+                    <div id="questionArea">
+                        <!-- Rendered by JS -->
+                    </div>
+
+                    <!-- Footer Action Controls -->
+                    <div class="q-footer">
+                        <button class="btn btn-secondary" id="prevBtn" disabled>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                            Précédente
+                        </button>
+                        
+                        <button class="btn btn-secondary" id="flagBtn">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+                                <line x1="4" y1="22" x2="4" y2="15"></line>
+                            </svg>
+                            Signaler pour relecture
+                        </button>
+
+                        <button class="btn btn-primary" id="nextBtn">
+                            Suivante
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- RESULTS CONTAINER (Initially Hidden) -->
+        <div class="result-container" id="resultContainer" style="display: none;">
+            <!-- Rendered upon Submission by JS -->
+        </div>
+    </div>
+
+    <!-- MODAL OVERLAY: SUBMISSION CONFIRMATION -->
+    <div class="modal-overlay" id="confirmSubmitModal">
+        <div class="modal-card">
+            <h3 class="modal-title">Terminer l'épreuve ?</h3>
+            <div class="modal-body" id="confirmModalBody">
+                Êtes-vous sûr de vouloir soumettre votre copie ? Cette action arrêtera le minuteur et calculera votre score.
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="cancelSubmit">Continuer l'épreuve</button>
+                <button class="btn btn-success" id="confirmSubmit">Soumettre et terminer</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- HIGH-RESOLUTION DIAGRAM ZOOM LIGHTBOX -->
+    <div class="lightbox-overlay" id="imageLightbox">
+        <div class="lightbox-header">
+            <span class="lightbox-title">Figure Clinique</span>
+            <button class="lightbox-close" title="Fermer (Échap)">&times;</button>
+        </div>
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="Agrandissement de la figure">
+        </div>
+    </div>
+
+    <!-- Code Logic & Interface bindings -->
+    <script src="app.js"></script>
+    <script src="ui.js"></script>
+</body>
+</html>
