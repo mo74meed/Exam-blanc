@@ -353,7 +353,6 @@ Conduite à tenir :
         ],
         options: [
             "Aérosol doseur pressurisé",
-            "Aérosol doseur avec chambre d'inhalation",
             "Nébuliseur",
             "Inhalateur de poudre sèche"
         ],
@@ -361,9 +360,9 @@ Conduite à tenir :
             "1": "Inhalateur de poudre sèche",
             "2": "Inhalateur de poudre sèche",
             "3": "Aérosol doseur pressurisé",
-            "4": "Aérosol doseur avec chambre d'inhalation"
+            "4": "Nébuliseur"
         },
-        explanation: "Le dispositif 1 est un inhalateur de poudre sèche de type Turbuhaler. Le dispositif 2 est également un inhalateur de poudre sèche de type Diskus. Le dispositif 3 est un aérosol doseur pressurisé classique (pMDI). Le dispositif 4 montre un aérosol doseur relié à une chambre d'inhalation (spacer), dispositif indispensable pour optimiser la déposition pulmonaire et réduire les effets secondaires chez de nombreux patients."
+        explanation: "Le dispositif 1 correspond à un inhalateur de poudre sèche (type Turbuhaler). Le dispositif 2 est également un inhalateur de poudre sèche (type Diskus). Le dispositif 3 est un aérosol doseur pressurisé classique (spray). Le dispositif 4 correspond à un nébuliseur."
     },
 {
         id: 11,
