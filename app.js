@@ -336,8 +336,8 @@ Conduite à tenir :
             { id: "c", text: "Option C", image: "images/fig_tb_opt_c.jpg" },
             { id: "d", text: "Option D", image: "images/fig_tb_opt_d.jpg" }
         ],
-        draftCorrectAnswer: "b",
-        explanation: "L'option B montre généralement des lésions infiltratives ou caverneuses apicales bilatérales typiques de la tuberculose pulmonaire active (caverne tuberculeuse)."
+        draftCorrectAnswer: "c",
+        explanation: "L'option C montre généralement des lésions infiltratives ou caverneuses apicales bilatérales typiques de la tuberculose pulmonaire active (caverne tuberculeuse)."
     },
 {
         id: 10,
@@ -527,9 +527,8 @@ Conduite à tenir :
             { id: "d", text: "Un hémithorax opaque avec distension (déviation controlatérale du médiastin)" },
             { id: "e", text: "Un poumon blanc (épanchement pleural liquidien de grande abondance)" }
         ],
-        draftCorrectAnswers: ["d", "e"],
-        explanation: "L'image montre une opacité totale et homogène de l'hémithorax gauche ('poumon blanc') avec refoulement du médiastin (trachée et cœur) vers la droite (côté sain/controlatéral), ce qui traduit un épanchement pleural liquide de très grande abondance avec distension."
-    },
+        draftCorrectAnswers: ["a", "b"],
+        },
 {
         id: 22,
         category: "Hépatologie",
@@ -668,7 +667,7 @@ Conduite à tenir :
             { id: "d", text: "Une opacité du sommet droit de densité hydrique" },
             { id: "e", text: "II existe une opacité du sommet droit avec un bronchogramme aérien" }
         ],
-        draftCorrectAnswers: ["a", "b", , "e"],
+        draftCorrectAnswers: ["a", "b", "e"],
         explanation: "La radiographie montre une opacité de densité hydrique homogène, limitée en bas par la petite scissure (donc systématisée au lobe supérieur droit), non rétractile et contenant un bronchogramme aérien. Ces critères clinico-radiologiques orientent fortement vers une pneumonie lobaire supérieure droite (PFLA)."
     },
     {
