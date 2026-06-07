@@ -1338,3 +1338,17 @@ h1, h2, h3, h4, h5, h6 {
     stroke-width: 1.8;
     fill: none;
 }
+
+/* Grouping Headers in the sidebar grid */
+.grid-part-header {
+    grid-column: span 5;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-secondary);
+    margin: 10px 0 4px 0;
+    border-bottom: 1px dashed var(--border-color);
+    padding-bottom: 4px;
+    opacity: 0.8;
+}

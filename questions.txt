@@ -203,3 +203,179 @@ Choix / Options :
   -   - Symétrie / Orientation correcte
 ------------------------------------------------------------
 
+Question 24 - [Pneumologie - Diagnostics]
+Énoncé : Devant une dyspnée chronique, la présence de polyarthralgies doit évoquer (Veuillez choisir AU MOINS UNE REPONSE) :
+Choix / Options :
+  - A. Pneumopathie infiltrante diffuse
+  - B. Pneumopathie d'hypersensibilité
+  - C. Pneumopathie infiltrante diffuse au stade de fibrose
+  - D. Asthme allergique
+  - E. Bronchectasie diffuse
+------------------------------------------------------------
+
+Question 25 - [Pneumologie - Cas Clinique 48 ans (Partie 1)]
+Énoncé : Patient âgé de 48 ans, se présente à votre consultation pour une DYSPNEE AIGUE depuis 2 jours. Parmi les propositions suivantes, quelles sont les hypothèses diagnostiques les plus probables ?
+Choix / Options :
+  - A. Myopathie de Duchenne
+  - B. Embolie pulmonaire
+  - C. Pneumothorax
+  - D. Aspergillome pulmonaire
+  - E. Kyste hydatique pulmonaire
+------------------------------------------------------------
+
+Question 26 - [Pneumologie - Cas Clinique 48 ans (Partie 2)]
+Énoncé : Patient âgé de 48 ans, se présente à votre consultation pour une DYSPNEE AIGUE depuis 2 jours. Parmi les propositions suivantes, quelles sont les hypothèses diagnostiques les plus probables (suite) :
+Choix / Options :
+  - A. Œdème Aigu du Poumon
+  - B. Séquelles de tuberculose
+  - C. Pneumothorax
+  - D. Bronchectasie diffuse
+  - e. Exacerbation de BPCO
+------------------------------------------------------------
+
+Question 27 - [Pneumologie - Cas Clinique 48 ans (Partie 3)]
+Énoncé : Patient âgé de 48 ans, se présente à votre consultation pour une DYSPNEE AIGUE depuis 2 jours. L'anamnèse de ce patient retrouve les éléments suivants : c'est un ouvrier de profession, qui travaille dans un four traditionnel depuis 25 ans ; il n'est pas tabagique ; notion d'angines à répétition dans l'enfance, non connu cardiaque. Quels sont les autres facteurs de risque et antécédents à rechercher à l'anamnèse ?
+Choix / Options :
+  - A. Notion d'atopie familiale
+  - B. Notion d'alitement prolongé
+  - C. Notion d'exposition aux pneumallergènes
+  - D. Notion de contact avec les chiens
+  - E. Antécédents de tuberculose
+------------------------------------------------------------
+
+Question 28 - [Pneumologie - Cas Clinique 48 ans (Partie 4)]
+Énoncé : Patient âgé de 48 ans, se présente à votre consultation pour une DYSPNEE AIGUE depuis 2 jours. L'anamnèse de ce patient retrouve les éléments suivants : c'est un ouvrier de profession, qui travaille dans un four traditionnel depuis 25 ans ; il n'est pas tabagique ; notion d'angines à répétition dans l'enfance, non connu cardiaque ; l'histoire de la maladie remonte à 02 jours, à la suite d'un effort physique très important, par une douleur thoracique brutale en coup de poignard gauche, associée à une dyspnée aiguë, sans autres signes associés. Quels sont les résultats attendus à l'examen physique ?
+Choix / Options :
+  - A. Distension thoracique globale avec respiration lèvres pincées
+  - B. Syndrome d'épanchement liquidien
+  - C. Râles sibilants diffus
+  - D. Râles crépitants diffus
+  - E. Syndrome d'épanchement aérien
+------------------------------------------------------------
+
+Question 29 - [Pneumologie - Cas Clinique 48 ans (Partie 5)]
+Énoncé : Patient âgé de 48 ans, se présente à votre consultation pour une DYSPNEE AIGUE depuis 2 jours. L'anamnèse retrouve : ouvrier, non tabagique, angines dans l'enfance, douleur thoracique brutale en coup de poignard gauche suite à un effort physique important. Une radiographie thoracique a été réalisée. Quelle est votre conduite à tenir immédiate pour ce patient ?
+Type : Question rédigée (réponse libre)
+------------------------------------------------------------
+
+Question 30 - [Pneumologie - Diagnostics]
+Énoncé : Devant cette radiographie thoracique (Ci-dessous), on retient :
+Choix / Options :
+  - A. Le diagnostic le plus probable est une pneumonie aigue
+  - B. Une opacité droite systématisée
+  - C. Une opacité droite rétractile
+  - D. Une opacité du sommet droit de densité hydrique
+  - E. II existe une opacité du sommet droit avec un bronchogramme aérien
+------------------------------------------------------------
+
+Question 31 - [Pneumologie - Sémiologie]
+Énoncé : Devant une dyspnée aigue, la présence de sifflements thoraciques doit évoquer :
+Choix / Options :
+  - A. Embolie pulmonaire
+  - B. Asthme
+  - C. Pneumopathie d'hypersensibilité
+  - D. Bronchopneumopathie chronique obstructive BPCO
+------------------------------------------------------------
+
+Question 32 - [Pneumologie - Diagnostics]
+Énoncé : Devant une dyspnée chronique, la présence d'épisodes récurrents de dyspnée doit d'abord évoquer :
+Choix / Options :
+  - A. Oedème de quincke
+  - B. Pneumopathie d'hypersensibilité
+  - C. Asthme
+  - D. Kyste hydatique pulmonaire
+  - E. Bronchopneumopathie chronique obstructive BPCO
+------------------------------------------------------------
+
+Question 33 - [Pneumologie]
+Énoncé : Parmi les propositions suivantes, quelles sont les étiologies 'MINEURES' de la dyspnée chronique ?
+Choix / Options :
+  - A. BronchoPneumopathie chronique Obstructive BPCO
+  - B. Bronchectasie bilatérale
+  - C. Déformation thoracique
+  - D. Laryngite virale
+  - E. Sténose trachéale post-intubation
+------------------------------------------------------------
+
+Question 34 - [Pneumologie - Examen clinique]
+Énoncé : Pour évaluer la transmission des vibrations vocales :
+Choix / Options :
+  - A. On pose la paume de la main sur la paroi thoracique
+  - B. On pose les doigts sur la paroi thoracique
+  - C. Le patient doit prononcer en français le nombre 44
+  - D. Se fait exclusivement en postérieur
+  - E. Le patient doit prononcer en arabe le nombre 33
+------------------------------------------------------------
+
+Question 35 - [Pneumologie - Thérapeutique]
+Énoncé : Les principales indications de la nébulisation sont :
+Choix / Options :
+  - A. Asthme
+  - B. Mucoviscidose
+  - C. Abcès du poumon
+  - D. Pneumonies sévères
+  - E. BPCO
+------------------------------------------------------------
+
+Question 36 - [Pneumologie - Thérapeutique]
+Énoncé : Les avantages de la chambre d'inhalation sont :
+Choix / Options :
+  - A. Ils sont indiqués particulièrement chez les femmes
+  - B. Ils sont indiqués chez les patients qui utilisent mal le spray
+  - C. Ils dispensent de la coordination déclenchement / inhalation
+  - D. Ils réduisent l'impaction oro-pharyngée
+  - E. Les nouveaux modèles de chambres d'inhalation sont peu encombrants
+------------------------------------------------------------
+
+Question 37 - [Pneumologie - Physiologie]
+Énoncé : Les volumes pulmonaires mobilisables sont :
+Choix / Options :
+  - A. Le volume courant
+  - B. La capacité pulmonaire totale
+  - C. La capacité vitale lente
+  - D. La capacité résiduelle fonctionnelle
+  - E. Le volume de réserve expiratoire
+------------------------------------------------------------
+
+Question 38 - [Gastro-entérologie - Diarrhées]
+Énoncé : Devant une diarrhée aigue, parmi les éléments à rechercher à l'interrogatoire, on retrouve :
+Choix / Options :
+  - A. La notion d'un traumatisme récent
+  - B. Absorption d'un aliment suspect
+  - C. La présence d'autres cas similaires dans l'entourage
+  - D. Une prise médicamenteuse récente
+  - E. La présence d'un ictère
+  - F. La notion d'un voyage récent en zone d'endémie
+------------------------------------------------------------
+
+Question 39 - [Gastro-entérologie - Diarrhées]
+Énoncé : Parmi les définitions suivantes d'une diarrhée chronique, lesquelles sont correctes ?
+Choix / Options :
+  - A. Un nombre de selles qui dépasse 3 par jour depuis plus de 4 semaines (ou 1 mois)
+  - B. Un nombre de selles qui dépasse 2 par jour depuis moins de 2 semaines
+  - C. La présence de selles liquidiennes depuis moins de 2 semaines
+  - D. La présence d'une perte involontaire de selles
+  - E. La présence d'une constipation qui précède l'installation de la diarrhée
+------------------------------------------------------------
+
+Question 40 - [Gastro-entérologie - Diarrhées]
+Énoncé : Dans la diarrhée chronique de malabsorption :
+Choix / Options :
+  - A. Les selles sont liquides, contenant des parcelles dures
+  - B. Les selles sont volumineuses, souvent décolorées, non sanglantes, graisseuses, laissant une tache d'huile sur l'eau de la cuvette ou sur le papier
+  - C. Les selles sont fréquentes, peu abondantes, mêlées de mucus et de sang, accompagnées d'épreintes et de faux besoins
+  - D. Les selles sont très liquides, aqueuses, sans graisse ni sang
+  - E. Les selles contiennent des aliments ingérés quelques heures avant
+------------------------------------------------------------
+
+Question 41 - [Gastro-entérologie - Diarrhées]
+Énoncé : Cochez les réponses justes :
+Choix / Options :
+  - A. Le syndrome dysentérique traduit la réaction de la cavité rectale à différentes agressions inflammatoires, parasitaires ou tumorales
+  - B. Il s'accompagne de déjections afécales
+  - C. La diarrhée aiguë est définie comme des selles trop fréquentes et trop liquides
+  - D. Les âges extrêmes sont des critères de gravité à rechercher devant une diarrhée aiguë
+  - E. La déshydratation est l'un des éléments les plus importants à rechercher devant une diarrhée aiguë
+------------------------------------------------------------
+
+

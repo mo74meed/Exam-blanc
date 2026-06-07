@@ -573,6 +573,270 @@ Conduite à tenir :
             "7": "Symétrie / Orientation correcte"
         },
         explanation: "L'évaluation de la qualité d'une radiographie pulmonaire (critères de clichés de face inspirés du score de Lamy ou critères de qualité classiques) étudie : le centrage (clavicules symétriques), l'inspiration profonde (6 arcs antérieurs visibles), le dégagement des omoplates, le dégagement des sommets (apex), la pénétration (visibilité rétro-cardiaque) et l'inclusion complète des culs-de-sac."
+    },
+    {
+        id: 24,
+        category: "Pneumologie - Diagnostics",
+        type: "qcm",
+        text: "Devant une dyspnée chronique, la présence de polyarthralgies doit évoquer (Veuillez choisir AU MOINS UNE REPONSE) :",
+        options: [
+            { id: "a", text: "Pneumopathie infiltrante diffuse" },
+            { id: "b", text: "Pneumopathie d'hypersensibilité" },
+            { id: "c", text: "Pneumopathie infiltrante diffuse au stade de fibrose" },
+            { id: "d", text: "Asthme allergique" },
+            { id: "e", text: "Bronchectasie diffuse" }
+        ],
+        draftCorrectAnswers: ["a", "c"],
+        explanation: "La présence de polyarthralgies associée à une dyspnée chronique doit faire suspecter en premier lieu une pneumopathie infiltrante diffuse (PID) secondaire à une connectivite (comme la polyarthrite rhumatoïde ou la sclérodermie systémique), que ce soit au stade initial ou au stade de fibrose pulmonaire avérée."
+    },
+    {
+        id: 25,
+        category: "Pneumologie - Cas Clinique 48 ans (Partie 1)",
+        type: "qcm",
+        text: "Patient âgé de 48 ans, se présente à votre consultation pour une DYSPNEE AIGUE depuis 2 jours. Parmi les propositions suivantes, quelles sont les hypothèses diagnostiques les plus probables ?",
+        options: [
+            { id: "a", text: "Myopathie de Duchenne" },
+            { id: "b", text: "Embolie pulmonaire" },
+            { id: "c", text: "Pneumothorax" },
+            { id: "d", text: "Aspergillome pulmonaire" },
+            { id: "e", text: "Kyste hydatique pulmonaire" }
+        ],
+        draftCorrectAnswers: ["b", "c"],
+        explanation: "Devant une dyspnée aiguë isolée chez un patient sans antécédents cardiorespiratoires connus, les deux urgences diagnostiques majeures à évoquer parmi les propositions sont l'embolie pulmonaire et le pneumothorax. La myopathie, l'aspergillome et le kyste hydatique non compliqué sont des pathologies chroniques."
+    },
+    {
+        id: 26,
+        category: "Pneumologie - Cas Clinique 48 ans (Partie 2)",
+        type: "qcm",
+        text: "Patient âgé de 48 ans, se présente à votre consultation pour une DYSPNEE AIGUE depuis 2 jours. Parmi les propositions suivantes, quelles sont les hypothèses diagnostiques les plus probables (suite) :",
+        options: [
+            { id: "a", text: "Œdème Aigu du Poumon" },
+            { id: "b", text: "Séquelles de tuberculose" },
+            { id: "c", text: "Pneumothorax" },
+            { id: "d", text: "Bronchectasie diffuse" },
+            { id: "e", text: "Exacerbation de BPCO" }
+        ],
+        draftCorrectAnswers: ["a", "c", "e"],
+        explanation: "Les causes de dyspnée aiguë à évoquer dans cette liste sont l'Œdème Aigu du Poumon (OAP), le Pneumothorax et l'exacerbation de BPCO. Les séquelles de tuberculose et la bronchectasie diffuse sont des causes de dyspnée chronique progressive."
+    },
+    {
+        id: 27,
+        category: "Pneumologie - Cas Clinique 48 ans (Partie 3)",
+        type: "qcm",
+        text: "Patient âgé de 48 ans, se présente à votre consultation pour une DYSPNEE AIGUE depuis 2 jours. L'anamnèse de ce patient retrouve les éléments suivants : c'est un ouvrier de profession, qui travaille dans un four traditionnel depuis 25 ans ; il n'est pas tabagique ; notion d'angines à répétition dans l'enfance, non connu cardiaque. Quels sont les autres facteurs de risque et antécédents à rechercher à l'anamnèse ?",
+        options: [
+            { id: "a", text: "Notion d'atopie familiale" },
+            { id: "b", text: "Notion d'alitement prolongé" },
+            { id: "c", text: "Notion d'exposition aux pneumallergènes" },
+            { id: "d", text: "Notion de contact avec les chiens" },
+            { id: "e", text: "Antécédents de tuberculose" }
+        ],
+        draftCorrectAnswers: ["a", "b", "c", "d", "e"],
+        explanation: "Tous ces antécédents et facteurs de risque sont pertinents à rechercher lors de l'interrogatoire d'une dyspnée aiguë : l'atopie et les pneumallergènes pour l'asthme, l'alitement prolongé pour le risque thromboembolique (embolie), le contact avec les chiens pour l'hydatidose et la tuberculose pour des séquelles ou réactivation pulmonaire."
+    },
+    {
+        id: 28,
+        category: "Pneumologie - Cas Clinique 48 ans (Partie 4)",
+        type: "qcm",
+        text: "Patient âgé de 48 ans, se présente à votre consultation pour une DYSPNEE AIGUE depuis 2 jours. L'anamnèse de ce patient retrouve les éléments suivants : c'est un ouvrier de profession, qui travaille dans un four traditionnel depuis 25 ans ; il n'est pas tabagique ; notion d'angines à répétition dans l'enfance, non connu cardiaque ; l'histoire de la maladie remonte à 02 jours, à la suite d'un effort physique très important, par une douleur thoracique brutale en coup de poignard gauche, associée à une dyspnée aiguë, sans autres signes associés. Quels sont les résultats attendus à l'examen physique ?",
+        options: [
+            { id: "a", text: "Distension thoracique globale avec respiration lèvres pincées" },
+            { id: "b", text: "Syndrome d'épanchement liquidien" },
+            { id: "c", text: "Râles sibilants diffus" },
+            { id: "d", text: "Râles crépitants diffus" },
+            { id: "e", text: "Syndrome d'épanchement aérien" }
+        ],
+        draftCorrectAnswers: ["e"],
+        explanation: "Le tableau associant une douleur thoracique aiguë brutale en coup de poignard à la suite d'un effort et une dyspnée aiguë chez un sujet jeune sain évoque en premier lieu un pneumothorax spontané gauche. L'examen physique caractéristique montrera un syndrome d'épanchement pleural aérien (diminution/abolition du murmure vésiculaire, tympanisme à la percussion et abolition des vibrations vocales du côté gauche)."
+    },
+    {
+        id: 29,
+        category: "Pneumologie - Cas Clinique 48 ans (Partie 5)",
+        type: "text",
+        text: "Patient âgé de 48 ans, se présente à votre consultation pour une DYSPNEE AIGUE depuis 2 jours. L'anamnèse retrouve les éléments suivants : ouvrier de profession dans un four traditionnel, non tabagique, angines dans l'enfance, douleur thoracique brutale en coup de poignard gauche suite à un effort physique important. Une radiographie thoracique a été réalisée. Quelle est votre conduite à tenir immédiate pour ce patient ?",
+        modelAnswer: "La radiographie thoracique confirmera le pneumothorax gauche. La conduite à tenir immédiate dépend de sa taille et de sa tolérance clinique :\n1. Si le pneumothorax est de petite taille (partiel) et parfaitement toléré cliniquement : repos au lit et surveillance simple.\n2. Si le pneumothorax est complet, de grande abondance ou mal toléré cliniquement (signes de détresse respiratoire, hypoxémie, ou instabilité tensionnelle) : évacuation de l'air en urgence soit par exsufflation à l'aiguille, soit par la pose d'un drain thoracique sous contrôle stérile relié à un système d'aspiration douce ou à une valve anti-retour.",
+        explanation: "Le traitement immédiat du pneumothorax repose sur le repos simple (formes mineures tolérées) ou sur l'évacuation pleurale de l'air (exsufflation/drainage) en cas de mauvaise tolérance ou de grande taille."
+    },
+    {
+        id: 30,
+        category: "Pneumologie - Diagnostics",
+        type: "qcm",
+        text: "Devant cette radiographie thoracique, on retient :",
+        image: "images/fig_pneumonia_upper_lobe.jpg",
+        options: [
+            { id: "a", text: "Le diagnostic le plus probable est une pneumonie aigue" },
+            { id: "b", text: "Une opacité droite systématisée" },
+            { id: "c", text: "Une opacité droite rétractile" },
+            { id: "d", text: "Une opacité du sommet droit de densité hydrique" },
+            { id: "e", text: "II existe une opacité du sommet droit avec un bronchogramme aérien" }
+        ],
+        draftCorrectAnswers: ["a", "b", "d", "e"],
+        explanation: "La radiographie montre une opacité de densité hydrique homogène du sommet droit, limitée en bas par la petite scissure (donc systématisée au lobe supérieur droit), non rétractile et contenant un bronchogramme aérien. Ces critères clinico-radiologiques orientent fortement vers une pneumonie lobaire supérieure droite (PFLA)."
+    },
+    {
+        id: 31,
+        category: "Pneumologie - Sémiologie",
+        type: "qcm",
+        text: "Devant une dyspnée aigue, la présence de sifflements thoraciques doit évoquer :",
+        options: [
+            { id: "a", text: "Embolie pulmonaire" },
+            { id: "b", text: "Asthme" },
+            { id: "c", text: "Pneumopathie d'hypersensibilité" },
+            { id: "d", text: "Bronchopneumopathie chronique obstructive BPCO" }
+        ],
+        draftCorrectAnswers: ["b", "d"],
+        explanation: "La présence de râles sibilants diffus à l'auscultation (sifflements) signe un bronchospasme et oriente en urgence vers un asthme (crise ou exacerbation) ou une exacerbation aiguë de BPCO. L'embolie pulmonaire ou la pneumopathie d'hypersensibilité n'ont pas cette auscultation sibilante diffuse classique en phase aiguë."
+    },
+    {
+        id: 32,
+        category: "Pneumologie - Diagnostics",
+        type: "qcu",
+        text: "Devant une dyspnée chronique, la présence d'épisodes récurrents de dyspnée doit d'abord évoquer :",
+        options: [
+            { id: "a", text: "Oedème de quincke" },
+            { id: "b", text: "Pneumopathie d'hypersensibilité" },
+            { id: "c", text: "Asthme" },
+            { id: "d", text: "Kyste hydatique pulmonaire" },
+            { id: "e", text: "Bronchopneumopathie chronique obstructive BPCO" }
+        ],
+        draftCorrectAnswer: "c",
+        explanation: "La récurrence périodique d'épisodes de dyspnée expiratoire réversibles avec examen clinique normal intercritique est hautement évocatrice de l'asthme bronchique."
+    },
+    {
+        id: 33,
+        category: "Pneumologie",
+        type: "qcm",
+        text: "Parmi les propositions suivantes, quelles sont les étiologies 'MINEURES' de la dyspnée chronique ?",
+        options: [
+            { id: "a", text: "BronchoPneumopathie chronique Obstructive BPCO" },
+            { id: "b", text: "Bronchectasie bilatérale" },
+            { id: "c", text: "Déformation thoracique" },
+            { id: "d", text: "Laryngite virale" },
+            { id: "e", text: "Sténose trachéale post-intubation" }
+        ],
+        draftCorrectAnswers: ["b", "c", "e"],
+        explanation: "Les causes majeures de dyspnée chronique sont la BPCO, l'asthme, l'insuffisance cardiaque et les PID. Les causes mineures incluent les déformations thoraciques, les sténoses trachéales et les bronchectasies. La laryngite virale est une cause de dyspnée laryngée aiguë (généralement pédiatrique)."
+    },
+    {
+        id: 34,
+        category: "Pneumologie - Examen clinique",
+        type: "qcm",
+        text: "Pour évaluer la transmission des vibrations vocales :",
+        options: [
+            { id: "a", text: "On pose la paume de la main sur la paroi thoracique" },
+            { id: "b", text: "On pose les doigts sur la paroi thoracique" },
+            { id: "c", text: "Le patient doit prononcer en français le nombre 44" },
+            { id: "d", text: "Se fait exclusivement en postérieur" },
+            { id: "e", text: "Le patient doit prononcer en arabe le nombre 33" }
+        ],
+        draftCorrectAnswers: ["a", "e"],
+        explanation: "L'exploration des vibrations vocales s'effectue en posant fermement la paume des mains de manière comparative sur le thorax du patient tout en lui demandant de répéter un mot résonnant riche en consonnes (comme 33 en arabe ou 44 en français, la pratique courante locale étant 33 en arabe). Elle se fait sur toutes les faces du thorax (postérieure, antérieure, latérale)."
+    },
+    {
+        id: 35,
+        category: "Pneumologie - Thérapeutique",
+        type: "qcm",
+        text: "Les principales indications de la nébulisation sont :",
+        options: [
+            { id: "a", text: "Asthme" },
+            { id: "b", text: "Mucoviscidose" },
+            { id: "c", text: "Abcès du poumon" },
+            { id: "d", text: "Pneumonies sévères" },
+            { id: "e", text: "BPCO" }
+        ],
+        draftCorrectAnswers: ["a", "b", "e"],
+        explanation: "La nébulisation permet de délivrer de fortes doses d'aérosol et est indiquée dans les crises d'asthme aigu grave, les exacerbations sévères de BPCO, et pour des traitements inhalés de mucoviscidose (comme la dornase alfa ou les antibiotiques). Elle n'a pas d'indication standard dans les pneumonies ou abcès parenchymateux non compliqués."
+    },
+    {
+        id: 36,
+        category: "Pneumologie - Thérapeutique",
+        type: "qcm",
+        text: "Les avantages de la chambre d'inhalation sont :",
+        options: [
+            { id: "a", text: "Ils sont indiqués particulièrement chez les femmes" },
+            { id: "b", text: "Ils sont indiqués chez les patients qui utilisent mal le spray" },
+            { id: "c", text: "Ils dispensent de la coordination déclenchement / inhalation" },
+            { id: "d", text: "Ils réduisent l'impaction oro-pharyngée" },
+            { id: "e", text: "Les nouveaux modèles de chambres d'inhalation sont peu encombrants" }
+        ],
+        draftCorrectAnswers: ["b", "c", "d", "e"],
+        explanation: "Les chambres d'inhalation éliminent le besoin de coordonner l'activation de la cartouche avec l'inspiration (très utile chez les enfants, les personnes âgées, ou en cas de mauvaise technique), et réduisent le dépôt du médicament dans la bouche et la gorge (impaction oro-pharyngée), limitant les effets secondaires locaux et systémiques. Les dispositifs récents sont petits et facilement transportables."
+    },
+    {
+        id: 37,
+        category: "Pneumologie - Physiologie",
+        type: "qcm",
+        text: "Les volumes pulmonaires mobilisables sont :",
+        options: [
+            { id: "a", text: "Le volume courant" },
+            { id: "b", text: "La capacité pulmonaire totale" },
+            { id: "c", text: "La capacité vitale lente" },
+            { id: "d", text: "La capacité résiduelle fonctionnelle" },
+            { id: "e", text: "Le volume de réserve expiratoire" }
+        ],
+        draftCorrectAnswers: ["a", "c", "e"],
+        explanation: "Les volumes mobilisables sont mesurables par spirométrie simple (Volume courant, Volume de réserve expiratoire, Capacité vitale lente). La CPT et la CRF ne sont pas mesurables par spirométrie simple car elles intègrent le volume résiduel (non mobilisable), nécessitant une pléthysmographie corporelle ou une méthode de dilution d'hélium."
+    },
+    {
+        id: 38,
+        category: "Gastro-entérologie - Diarrhées",
+        type: "qcm",
+        text: "Devant une diarrhée aigue, parmi les éléments à rechercher à l'interrogatoire, on retrouve :",
+        options: [
+            { id: "a", text: "La notion d'un traumatisme récent" },
+            { id: "b", text: "Absorption d'un aliment suspect" },
+            { id: "c", text: "La présence d'autres cas similaires dans l'entourage" },
+            { id: "d", text: "Une prise médicamenteuse récente" },
+            { id: "e", text: "La présence d'un ictère" },
+            { id: "f", text: "La notion d'un voyage récent en zone d'endémie" }
+        ],
+        draftCorrectAnswers: ["b", "c", "d", "f"],
+        explanation: "À l'interrogatoire d'une diarrhée aiguë, il est primordial de rechercher des facteurs d'exposition comme un aliment suspect, des cas similaires chez des proches (toxi-infection alimentaire collective), des médicaments introduits récemment (diarrhée post-antibiotiques) et un séjour à l'étranger ou voyage récent."
+    },
+    {
+        id: 39,
+        category: "Gastro-entérologie - Diarrhées",
+        type: "qcm",
+        text: "Parmi les définitions suivantes d'une diarrhée chronique, lesquelles sont correctes ?",
+        options: [
+            { id: "a", text: "Un nombre de selles qui dépasse 3 par jour depuis plus de 4 semaines (ou 1 mois)" },
+            { id: "b", text: "Un nombre de selles qui dépasse 2 par jour depuis moins de 2 semaines" },
+            { id: "c", text: "La présence de selles liquidiennes depuis moins de 2 semaines" },
+            { id: "d", text: "La présence d'une perte involontaire de selles" },
+            { id: "e", text: "La présence d'une constipation qui précède l'installation de la diarrhée" }
+        ],
+        draftCorrectAnswers: ["a"],
+        explanation: "La diarrhée chronique est définie cliniquement par l'émission de plus de 3 selles par jour (ou poids > 200g/24h) évoluant de manière continue ou intermittente sur une période supérieure à 4 semaines (ou 1 mois). Les options B et C décrivent une diarrhée aiguë. La perte involontaire (D) est une incontinence fécale, et la constipation alternée ou préalable (E) suggère une fausse diarrhée."
+    },
+    {
+        id: 40,
+        category: "Gastro-entérologie - Diarrhées",
+        type: "qcu",
+        text: "Dans la diarrhée chronique de malabsorption :",
+        options: [
+            { id: "a", text: "Les selles sont liquides, contenant des parcelles dures" },
+            { id: "b", text: "Les selles sont volumineuses, souvent décolorées, non sanglantes, graisseuses, laissant une tache d'huile sur l'eau de la cuvette ou sur le papier" },
+            { id: "c", text: "Les selles sont fréquentes, peu abondantes, mêlées de mucus et de sang, accompagnées d'épreintes et de faux besoins" },
+            { id: "d", text: "Les selles sont très liquides, aqueuses, sans graisse ni sang" },
+            { id: "e", text: "Les selles contiennent des aliments ingérés quelques heures avant" }
+        ],
+        draftCorrectAnswer: "b",
+        explanation: "La diarrhée de malabsorption est caractérisée par une stéatorrhée : selles abondantes, grasses (stéatorrhée), vernissées, laissant des traces huileuses, souvent fétides et sans sang. L'option C décrit un syndrome dysentérique colique, et l'option D décrit une diarrhée sécrétoire ou motrice."
+    },
+    {
+        id: 41,
+        category: "Gastro-entérologie - Diarrhées",
+        type: "qcm",
+        text: "Cochez les réponses justes :",
+        options: [
+            { id: "a", text: "Le syndrome dysentérique traduit la réaction de la cavité rectale à différentes agressions inflammatoires, parasitaires ou tumorales" },
+            { id: "b", text: "Il s'accompagne de déjections afécales" },
+            { id: "c", text: "La diarrhée aiguë est définie comme des selles trop fréquentes et trop liquides" },
+            { id: "d", text: "Les âges extrêmes sont des critères de gravité à rechercher devant une diarrhée aiguë" },
+            { id: "e", text: "La déshydratation est l'un des éléments les plus importants à rechercher devant une diarrhée aiguë" }
+        ],
+        draftCorrectAnswers: ["a", "b", "c", "d", "e"],
+        explanation: "Le syndrome dysentérique s'accompagne de glaires, sang et pus avec des déjections afécales, traduisant une atteinte rectale. La diarrhée aiguë correspond à des selles fréquentes, liquides ou molles de début brutal. Les âges extrêmes et le risque de déshydratation hydro-électrolytique sont des facteurs majeurs de gravité clinique à évaluer systématiquement."
     }
 ];
 

@@ -163,7 +163,8 @@ function renderQuestion(index) {
     const catBadge = document.createElement("div");
     catBadge.className = "q-badge";
     catBadge.style.marginBottom = "0";
-    catBadge.textContent = `${q.category} • Q${index + 1}/${questions.length}`;
+    const partNum = index >= 23 ? 2 : 1;
+    catBadge.textContent = `Partie ${partNum} | ${q.category} • Q${index + 1}/${questions.length}`;
     badgeContainer.appendChild(catBadge);
     
     // Type Badge
@@ -526,7 +527,21 @@ function renderSidebarGrid() {
     if (!grid) return;
     grid.innerHTML = "";
     
+    // Header for Part 1
+    const h1 = document.createElement("div");
+    h1.className = "grid-part-header";
+    h1.textContent = "Partie 1 (Gastro & Pneumo)";
+    grid.appendChild(h1);
+    
     questions.forEach((q, idx) => {
+        if (idx === 23) {
+            // Header for Part 2
+            const h2 = document.createElement("div");
+            h2.className = "grid-part-header";
+            h2.textContent = "Partie 2 (Compléments)";
+            grid.appendChild(h2);
+        }
+        
         const cell = document.createElement("div");
         cell.className = "q-cell";
         cell.textContent = idx + 1;
@@ -815,7 +830,8 @@ function renderCorrectionCards(filter, container) {
         header.className = "review-header";
         
         const title = document.createElement("div");
-        title.innerHTML = `<span style="color: var(--text-secondary); font-weight: bold; margin-right: 8px;">Q${idx + 1}</span><strong>${q.category}</strong>`;
+        const partText = idx >= 23 ? "Partie 2" : "Partie 1";
+        title.innerHTML = `<span style="color: var(--text-secondary); font-weight: bold; margin-right: 8px;">Q${idx + 1}</span><span style="font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; background: var(--color-primary-bg); color: var(--color-primary); padding: 2px 6px; border-radius: 4px; margin-right: 8px; font-weight: 700; border: 1px solid var(--border-color);">${partText}</span><strong>${q.category}</strong>`;
         header.appendChild(title);
         
         // Evaluate state
