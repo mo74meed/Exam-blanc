@@ -423,9 +423,8 @@ Conduite à tenir :
             { id: "d", text: "Une clarté pulmonaire gauche" },
             { id: "e", text: "Une opacité pulmonaire droite non systématisée" }
         ],
-        draftCorrectAnswers: ["a", "b"],
-        explanation: "L'association d'une opacité triangulaire à limite supérieure nette (systématisée au lobe moyen) effaçant le bord droit du cœur sur la face, et d'un syndrome infectieux aigu, signe une pneumonie lobaire du lobe moyen (PFLA)."
-    },
+        draftCorrectAnswers: [ "c"],
+        },
 {
         id: 15,
         category: "Gastro-entérologie",
@@ -438,9 +437,8 @@ Conduite à tenir :
             { id: "d", text: "Un terrain d'immunodépression" },
             { id: "e", text: "La présence de tares associées (cardiaque, rénale...)" }
         ],
-        draftCorrectAnswers: ["b"],
-        explanation: "La présence de signes d'infection sévère (fièvre élevée ou hypothermie) constitue l'élément de gravité majeur justifiant des explorations urgentes."
-    },
+        draftCorrectAnswers: ["b", "d", "e"],
+        explanation: "Les éléments de gravité à rechercher devant une diarrhée aiguë comprennent la présence de signes d'infection sévère (fièvre élevée, hypothermie, choc), un terrain d'immunodépression, et la présence de comorbidités ou tares associées (cardiaques, rénales, etc.). Un âge jeune n'est pas un facteur de gravité en soi."},
 {
         id: 16,
         category: "Pneumologie",
@@ -564,13 +562,13 @@ Conduite à tenir :
             "Symétrie / Orientation correcte"
         ],
         draftCorrectAnswers: {
-            "1": "Dégagement des apex (Clavicules projetées en dehors ou croisant le 3e espace)",
+            "1": "Symétrie / Orientation correcte",
             "2": "Centrage (Apophyses épineuses centrées entre les clavicules)",
-            "3": "Dégagement des omoplates (Omoplates projetées en dehors des champs pulmonaires)",
-            "4": "Temps inspiratoire correct (Au moins 6 arcs costaux antérieurs visibles)",
-            "5": "Pénétrance correcte (Visualisation des vertèbres dorsales derrière le cœur)",
+            "3": "Pénétrance correcte (Visualisation des vertèbres dorsales derrière le cœur)",
+            "4": "Dégagement des apex (Clavicules projetées en dehors ou croisant le 3e espace)",
+            "5": "Dégagement des omoplates (Omoplates projetées en dehors des champs pulmonaires)",
             "6": "Culs-de-sac costo-diaphragmatiques externes libres et pris",
-            "7": "Symétrie / Orientation correcte"
+            "7": "Temps inspiratoire correct (Au moins 6 arcs costaux antérieurs visibles)"
         },
         explanation: "L'évaluation de la qualité d'une radiographie pulmonaire (critères de clichés de face inspirés du score de Lamy ou critères de qualité classiques) étudie : le centrage (clavicules symétriques), l'inspiration profonde (6 arcs antérieurs visibles), le dégagement des omoplates, le dégagement des sommets (apex), la pénétration (visibilité rétro-cardiaque) et l'inclusion complète des culs-de-sac."
     },
@@ -670,8 +668,8 @@ Conduite à tenir :
             { id: "d", text: "Une opacité du sommet droit de densité hydrique" },
             { id: "e", text: "II existe une opacité du sommet droit avec un bronchogramme aérien" }
         ],
-        draftCorrectAnswers: ["a", "b", "d", "e"],
-        explanation: "La radiographie montre une opacité de densité hydrique homogène du sommet droit, limitée en bas par la petite scissure (donc systématisée au lobe supérieur droit), non rétractile et contenant un bronchogramme aérien. Ces critères clinico-radiologiques orientent fortement vers une pneumonie lobaire supérieure droite (PFLA)."
+        draftCorrectAnswers: ["a", "b", , "e"],
+        explanation: "La radiographie montre une opacité de densité hydrique homogène, limitée en bas par la petite scissure (donc systématisée au lobe supérieur droit), non rétractile et contenant un bronchogramme aérien. Ces critères clinico-radiologiques orientent fortement vers une pneumonie lobaire supérieure droite (PFLA)."
     },
     {
         id: 31,
@@ -729,8 +727,8 @@ Conduite à tenir :
             { id: "d", text: "Se fait exclusivement en postérieur" },
             { id: "e", text: "Le patient doit prononcer en arabe le nombre 33" }
         ],
-        draftCorrectAnswers: ["a", "e"],
-        explanation: "L'exploration des vibrations vocales s'effectue en posant fermement la paume des mains de manière comparative sur le thorax du patient tout en lui demandant de répéter un mot résonnant riche en consonnes (comme 33 en arabe ou 44 en français, la pratique courante locale étant 33 en arabe). Elle se fait sur toutes les faces du thorax (postérieure, antérieure, latérale)."
+        draftCorrectAnswers: ["a","c","e"],
+        explanation: "L'exploration des vibrations vocales s'effectue en posant fermement la paume des mains de manière comparative sur le thorax du patient tout en lui demandant de répéter un mot résonnant riche en consonnes (comme 33 en arabe ou 44 en français"
     },
     {
         id: 35,
@@ -790,7 +788,7 @@ Conduite à tenir :
             { id: "e", text: "La présence d'un ictère" },
             { id: "f", text: "La notion d'un voyage récent en zone d'endémie" }
         ],
-        draftCorrectAnswers: ["b", "c", "d", "f"],
+        draftCorrectAnswers: ["b", "c", "d","e", "f"],
         explanation: "À l'interrogatoire d'une diarrhée aiguë, il est primordial de rechercher des facteurs d'exposition comme un aliment suspect, des cas similaires chez des proches (toxi-infection alimentaire collective), des médicaments introduits récemment (diarrhée post-antibiotiques) et un séjour à l'étranger ou voyage récent."
     },
     {
