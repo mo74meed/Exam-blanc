@@ -1,0 +1,1 @@
+Place your downloaded Boards & Beyond .mp4 video files from Telegram directly into this folder, then run the python script: python sort_local_videos.py

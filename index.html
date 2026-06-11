@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Examen Blanc - Sémiologie & Clinique</title>
-    <!-- CSS Stylesheet -->
+    <title>Boards & Beyond Study Companion</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,34 +12,40 @@
         <!-- HEADER -->
         <header class="app-header">
             <div class="header-brand">
-                <button class="mobile-toggle" id="mobileToggle" title="Ouvrir le menu">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <button class="sidebar-toggle-btn" id="sidebarToggleBtn" title="Toggle Sidebar (Theater Mode)">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                         <line x1="3" y1="12" x2="21" y2="12"></line>
                         <line x1="3" y1="6" x2="21" y2="6"></line>
                         <line x1="3" y1="18" x2="21" y2="18"></line>
                     </svg>
                 </button>
-                <div>
-                    <div style="display: flex; align-items: center; gap: 10px;">
-                        <div class="brand-icon">E</div>
-                        <h1 class="brand-title">EXAMEN BLANC</h1>
+                <div class="brand-clickable" id="goHomeBtn">
+                    <div class="brand-logo-group">
+                        <div class="brand-icon">B&B</div>
+                        <div class="brand-text">
+                            <h1 class="brand-title">B&B STUDY</h1>
+                            <span class="brand-subtitle">PREMIUM COMPANION</span>
+                        </div>
                     </div>
-                    <span class="brand-subtitle">Sémiologie Médicale</span>
                 </div>
             </div>
 
-            <div class="header-controls" id="headerControls">
-                <!-- Elapsed Timer -->
-                <div class="timer-box" title="Temps écoulé">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <polyline points="12 6 12 12 16 14"></polyline>
-                    </svg>
-                    <span id="examTimer">00:00</span>
+            <!-- Header Breadcrumbs Navigation -->
+            <div class="header-breadcrumbs" id="headerBreadcrumbs" style="display: none;">
+                <span class="breadcrumb-subj" id="bcSubject">-</span>
+                <span class="breadcrumb-sep">/</span>
+                <span class="breadcrumb-sec" id="bcSection">-</span>
+                <span class="breadcrumb-sep">/</span>
+                <span class="breadcrumb-active" id="bcVideo">-</span>
+            </div>
+
+            <div class="header-controls">
+                <div class="global-stat-box" title="Total Videos Completed">
+                    <span class="stat-icon">📈</span>
+                    <span id="globalHeaderStat">0/0 Completed</span>
                 </div>
 
-                <!-- Dark/Light Mode Switcher -->
-                <button class="theme-toggle" id="themeToggle" title="Changer le thème">
+                <button class="theme-toggle" id="themeToggle" title="Toggle Theme">
                     <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
@@ -57,125 +62,271 @@
                     </svg>
                 </button>
             </div>
-
-            <!-- Submit copy -->
-            <button class="btn btn-success" id="submitExamBtn">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                </svg>
-                Soumettre ma copie
-            </button>
         </header>
 
         <!-- MAIN LAYOUT WRAPPER -->
-        <div class="main-wrapper" id="mainWrapper">
-            <!-- SIDEBAR -->
-            <aside class="app-sidebar">
-                <div class="sidebar-title">Progression</div>
-                <div class="progress-container">
-                    <div class="progress-info">
-                        <span id="progressCounter">0 sur 41 répondus</span>
-                    </div>
-                    <div class="progress-bar-bg">
-                        <div class="progress-bar-fill" id="progressFill"></div>
-                    </div>
-                </div>
-
-                <div class="sidebar-title">Questions</div>
-                <div class="question-grid" id="questionGrid">
-                    <!-- Cells dynamically rendered by JS -->
-                </div>
-
-                <!-- Legend of status colors -->
-                <div class="sidebar-legend">
-                    <div class="legend-item">
-                        <span class="legend-dot not-visited"></span>
-                        Non visitée
-                    </div>
-                    <div class="legend-item">
-                        <span class="legend-dot visited"></span>
-                        Visitée (sans réponse)
-                    </div>
-                    <div class="legend-item">
-                        <span class="legend-dot answered"></span>
-                        Répondue
-                    </div>
-                    <div class="legend-item">
-                        <span class="legend-dot flagged"></span>
-                        Signalée pour relecture
-                    </div>
+        <div class="main-wrapper">
+            <!-- DYNAMIC SIDEBAR (Left) -->
+            <aside class="app-sidebar" id="appSidebar">
+                <div class="sidebar-dynamic-content" id="sidebarDynamicContent">
+                    <!-- Dynamic Dashboard Navigation or Subject accordion curriculum goes here -->
                 </div>
             </aside>
 
-            <!-- MAIN WORKSPACE -->
+            <!-- MAIN WORKSPACE CONTENT (Right) -->
             <main class="content-panel">
-                <div class="question-container">
-                    <!-- Active Question Card -->
-                    <div id="questionArea">
-                        <!-- Rendered by JS -->
+                
+                <!-- 1. DASHBOARD VIEW -->
+                <div class="view-panel" id="dashboardView">
+                    
+                    <!-- STUDY SPOTLIGHT BILLBOARD (Netflix Banner style) -->
+                    <div class="study-spotlight-billboard" id="studySpotlightBillboard">
+                        <div class="billboard-content">
+                            <span class="billboard-badge">🔥 Current Subject</span>
+                            <h2 class="billboard-title" id="billboardSubjectTitle">Gastroenterology</h2>
+                            <div class="billboard-meta">
+                                <span class="billboard-match">99% Match for USMLE</span>
+                                <span class="billboard-year">2026 Edition</span>
+                                <span class="billboard-total-videos" id="billboardSubjectVideos">27 Videos</span>
+                            </div>
+                            <p class="billboard-desc" id="billboardSubjectDesc">Master gastrointestinal embryology, anatomy, physiology, and clinical pathology with interactive study notes and local playback tracking.</p>
+                            <div class="billboard-actions">
+                                <button class="btn btn-primary btn-billboard-play" id="billboardPlayBtn">
+                                    <span>▶</span> Resume Studying
+                                </button>
+                                <button class="btn btn-secondary btn-billboard-info" id="billboardInfoBtn">
+                                    <span>📋</span> View Curriculum
+                                </button>
+                            </div>
+                        </div>
+                        <div class="billboard-progress">
+                            <div class="progress-ring-box">
+                                <svg class="progress-ring-svg" width="130" height="130">
+                                    <circle class="progress-ring-bg" cx="65" cy="65" r="55"></circle>
+                                    <circle class="progress-ring-fill" id="globalProgressRing" cx="65" cy="65" r="55"></circle>
+                                </svg>
+                                <div class="progress-ring-text">
+                                    <span id="globalProgressPercent">0%</span>
+                                    <span class="progress-ring-label">Completed</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Footer Action Controls -->
-                    <div class="q-footer">
-                        <button class="btn btn-secondary" id="prevBtn" disabled>
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="15 18 9 12 15 6"></polyline>
-                            </svg>
-                            Précédente
-                        </button>
-                        
-                        <button class="btn btn-secondary" id="flagBtn">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
-                                <line x1="4" y1="22" x2="4" y2="15"></line>
-                            </svg>
-                            Signaler pour relecture
-                        </button>
+                    <!-- STUDY CAROUSELS -->
+                    <div class="dashboard-carousels">
+                        <!-- Continue watching carousel -->
+                        <div class="carousel-container" id="resumeSection" style="display: none;">
+                            <h3 class="carousel-title">Continue Studying</h3>
+                            <div class="carousel-row" id="resumeCard">
+                                <!-- Dynamic resume card -->
+                            </div>
+                        </div>
 
-                        <button class="btn btn-primary" id="nextBtn">
-                            Suivante
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="9 18 15 12 9 6"></polyline>
-                            </svg>
-                        </button>
+                        <!-- Subjects carousel -->
+                        <div class="carousel-container">
+                            <h3 class="carousel-title">Study Subjects</h3>
+                            <div class="carousel-row subjects-carousel" id="subjectsGrid">
+                                <!-- Dynamic subject cards -->
+                            </div>
+                        </div>
+
+                        <!-- Study consistency tracker grid (GitHub-style calendar) -->
+                        <div class="carousel-container">
+                            <h3 class="carousel-title">Study Consistency Calendar</h3>
+                            <div class="consistency-calendar-card">
+                                <div class="calendar-header-meta">
+                                    <span class="calendar-meta-title">Daily watched videos (Last 365 Days)</span>
+                                    <div class="calendar-legend">
+                                        <span>Less</span>
+                                        <div class="legend-box level-0"></div>
+                                        <div class="legend-box level-1"></div>
+                                        <div class="legend-box level-2"></div>
+                                        <div class="legend-box level-3"></div>
+                                        <span>More</span>
+                                    </div>
+                                </div>
+                                <div class="study-contribution-grid" id="studyContributionGrid">
+                                    <!-- Populated dynamically by JS -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. SUBJECT DETAILS & VIDEO VIEW (Cinema-Style Immersive Workspace) -->
+                <div class="view-panel" id="subjectView" style="display: none;">
+                    <div class="cinema-study-workspace">
+                        
+                        <!-- Dynamic Background Ambient Glow (Behind the Video Player) -->
+                        <div class="ambient-glow-backdrop" id="ambientGlowBackdrop"></div>
+
+                        <!-- ACTIVE VIDEO CARD (Central Player) -->
+                        <div class="video-card">
+                            <div class="video-card-header">
+                                <span class="section-label" id="videoSectionLabel">-</span>
+                                <h3 class="active-video-title" id="videoTitleLabel">Select a video to begin</h3>
+                            </div>
+
+                            <!-- Aspect-Ratio Video Container -->
+                            <div class="player-container">
+                                <div class="local-player-wrapper">
+                                    <video id="localVideoNode" controls></video>
+                                    
+                                    <!-- File Dropzone -->
+                                    <div class="file-dropzone" id="fileDropzone">
+                                        <div class="placeholder-content">
+                                            <span class="placeholder-icon">🎞️</span>
+                                            <h4>Local Video File Not Found</h4>
+                                            <p>Place this video in the <code>videos/gastroenterology/</code> folder, or click below to manually link it.</p>
+                                            <input type="file" id="localFilePicker" accept="video/*" style="display: none;">
+                                            <button class="btn btn-primary" id="browseFilesBtn">Browse Local Files</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Linked File Status Bar -->
+                                <div class="file-status-bar" id="fileStatusBar" style="display: none;">
+                                    <span class="file-name-label" id="linkedFileName">No file linked</span>
+                                    <button class="change-file-btn" id="changeLocalFileBtn">Change Local File</button>
+                                </div>
+                            </div>
+
+                            <!-- Controls Row -->
+                            <div class="player-actions-row">
+                                <button class="watched-toggle-btn" id="videoCompletedToggle">
+                                    <span class="check-box-icon"></span>
+                                    Mark as Completed
+                                </button>
+
+                                <div class="prev-next-nav">
+                                    <button class="btn btn-secondary" id="prevVideoBtn" disabled>
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                            <polyline points="15 18 9 12 15 6"></polyline>
+                                        </svg>
+                                        Previous
+                                    </button>
+                                    <button class="btn btn-primary" id="nextVideoBtn" disabled>
+                                        Next
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- WORKSPACE TAB PANELS -->
+                        <div class="workspace-tabs-container">
+                            <div class="study-tabs">
+                                <button class="tab-btn active" data-tab="paneNotes">📝 Study Notes</button>
+                                <button class="tab-btn" data-tab="paneHighYield">💡 High-Yield Pearls</button>
+                                <button class="tab-btn" data-tab="paneResources">⚙️ Resources & Backup</button>
+                            </div>
+
+                            <!-- TAB 1: STUDY NOTES -->
+                            <div class="tab-pane active" id="paneNotes">
+                                <div class="notes-editor-wrapper">
+                                    <div class="notes-header">
+                                        <div class="markdown-toolbar">
+                                            <button class="tool-btn" id="btnBold" title="Bold (Ctrl+B)"><b>B</b></button>
+                                            <button class="tool-btn" id="btnItalic" title="Italic (Ctrl+I)"><i>I</i></button>
+                                            <button class="tool-btn" id="btnHeading" title="Add Heading">H</button>
+                                            <span class="tool-sep">|</span>
+                                            <button class="tool-btn" id="btnBulletList" title="Bullet List">• List</button>
+                                            <button class="tool-btn" id="btnCode" title="Code Block">Code</button>
+                                            <button class="tool-btn" id="btnHighYield" title="Highlight High-Yield">⭐ High-Yield</button>
+                                        </div>
+                                        <span class="save-indicator" id="notesSaveStatus">Saved</span>
+                                    </div>
+                                    <textarea id="studyNotesTextarea" placeholder="Write summaries, high-yield terms, formulas, or key clinical concepts for this video... Notes are autosaved. Support markdown format."></textarea>
+                                </div>
+                            </div>
+
+                            <!-- TAB 2: HIGH-YIELD PEARLS -->
+                            <div class="tab-pane" id="paneHighYield">
+                                <div class="high-yield-content">
+                                    <div class="yield-section">
+                                        <h4>🎯 Diagnostic Key Concepts</h4>
+                                        <div class="pearl-bullet-list" id="pearlDiagnosticKeys">
+                                            <div class="pearl-item">
+                                                <span class="pearl-badge badge-primary">Embryology</span>
+                                                <p><strong>Hernias:</strong> Congenital umbilical hernias occur due to failure of bowel to return to abdominal cavity after physiological herniation; covered by skin. Omphalocele involves herniation into umbilical cord (covered by sac).</p>
+                                            </div>
+                                            <div class="pearl-item">
+                                                <span class="pearl-badge badge-danger">High Yield</span>
+                                                <p><strong>Wilson's Disease:</strong> Autosomal recessive mutation in ATP7B copper transporter. Characterized by Kayser-Fleischer rings, liver disease, neurological disorders, and low ceruloplasmin.</p>
+                                            </div>
+                                            <div class="pearl-item">
+                                                <span class="pearl-badge badge-warning">Physiology</span>
+                                                <p><strong>Bile & Bilirubin:</strong> Conjugated bilirubin is water soluble and excreted in bile. Unconjugated bilirubin is lipid soluble, bound to albumin, and cannot be excreted in urine.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- TAB 3: RESOURCES & BACKUP (Formerly settings panel content) -->
+                            <div class="tab-pane" id="paneResources">
+                                <div class="resources-panel-grid">
+                                    <div class="resources-card">
+                                        <h3>Data Management</h3>
+                                        <p>Export your studying data (watched status, custom local video links, study notes) to a backup file, or restore from a previously exported profile.</p>
+                                        <div class="resources-actions">
+                                            <button class="btn btn-primary" id="exportDataBtn">
+                                                📥 Export Backup File
+                                            </button>
+                                            <button class="btn btn-secondary" id="importBtnTrigger">
+                                                📤 Import Backup File
+                                            </button>
+                                            <input type="file" id="importFileSelector" accept=".json" style="display: none;">
+                                        </div>
+                                    </div>
+
+                                    <div class="resources-card danger-zone">
+                                        <h3>Danger Zone</h3>
+                                        <p>Resetting will delete all your study progress, saved notes, and local video associations. This action is irreversible.</p>
+                                        <div class="resources-actions">
+                                            <button class="btn btn-danger" id="resetAllProgressBtn">
+                                                ⚠️ Reset All Progress Data
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. GLOBAL SETTINGS VIEW -->
+                <div class="view-panel" id="settingsView" style="display: none;">
+                    <h2 class="view-title">⚙️ System Settings</h2>
+                    <div class="settings-container">
+                        <div class="settings-card info-card">
+                            <h3>Local Videos Setup Guide</h3>
+                            <p>To configure your video files for seamless native playback, follow these instructions:</p>
+                            <div class="info-list">
+                                <div class="info-item">
+                                    <strong>Step 1:</strong> Locate your downloaded videos from the Telegram channel.
+                                </div>
+                                <div class="info-item">
+                                    <strong>Step 2:</strong> Copy the files to the **`raw_downloads`** folder inside the **`Exam-blanc`** directory.
+                                </div>
+                                <div class="info-item">
+                                    <strong>Step 3:</strong> Run the Sorter renamer script **`python sort_local_videos.py`**. The script will automatically structure your files under the **`videos/`** folder.
+                                </div>
+                                <div class="info-item">
+                                    <strong>Step 4:</strong> Reload the web app. The video player will auto-detect the files and play them natively.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </main>
         </div>
-
-        <!-- RESULTS CONTAINER (Initially Hidden) -->
-        <div class="result-container" id="resultContainer" style="display: none;">
-            <!-- Rendered upon Submission by JS -->
-        </div>
     </div>
 
-    <!-- MODAL OVERLAY: SUBMISSION CONFIRMATION -->
-    <div class="modal-overlay" id="confirmSubmitModal">
-        <div class="modal-card">
-            <h3 class="modal-title">Terminer l'épreuve ?</h3>
-            <div class="modal-body" id="confirmModalBody">
-                Êtes-vous sûr de vouloir soumettre votre copie ? Cette action arrêtera le minuteur et calculera votre score.
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-secondary" id="cancelSubmit">Continuer l'épreuve</button>
-                <button class="btn btn-success" id="confirmSubmit">Soumettre et terminer</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- HIGH-RESOLUTION DIAGRAM ZOOM LIGHTBOX -->
-    <div class="lightbox-overlay" id="imageLightbox">
-        <div class="lightbox-header">
-            <span class="lightbox-title">Figure Clinique</span>
-            <button class="lightbox-close" title="Fermer (Échap)">&times;</button>
-        </div>
-        <div class="lightbox-content">
-            <img id="lightboxImage" src="" alt="Agrandissement de la figure">
-        </div>
-    </div>
-
-    <!-- Code Logic & Interface bindings -->
+    <!-- Script files -->
     <script src="app.js"></script>
     <script src="ui.js"></script>
 </body>
