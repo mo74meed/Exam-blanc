@@ -3,49 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boards & Beyond Study Companion</title>
+    <meta name="description" content="Boards & Beyond Study Companion — A premium, professional study platform for medical students preparing for USMLE board exams.">
+    <title>Boards & Beyond — Study Platform</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="app-container">
-        <!-- HEADER -->
+    <div class="app-shell">
+        <!-- ========== HEADER ========== -->
         <header class="app-header">
-            <div class="header-brand">
-                <button class="sidebar-toggle-btn" id="sidebarToggleBtn" title="Toggle Sidebar (Theater Mode)">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                        <line x1="3" y1="12" x2="21" y2="12"></line>
+            <div class="header-left">
+                <button class="sidebar-toggle" id="sidebarToggleBtn" title="Toggle Sidebar">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
                         <line x1="3" y1="18" x2="21" y2="18"></line>
                     </svg>
                 </button>
-                <div class="brand-clickable" id="goHomeBtn">
-                    <div class="brand-logo-group">
-                        <div class="brand-icon">B&B</div>
-                        <div class="brand-text">
-                            <h1 class="brand-title">B&B STUDY</h1>
-                            <span class="brand-subtitle">PREMIUM COMPANION</span>
-                        </div>
-                    </div>
+                <div class="brand" id="goHomeBtn">
+                    <div class="brand-mark">B&B</div>
+                    <div class="brand-name">Boards & Beyond <span>Study</span></div>
                 </div>
             </div>
 
-            <!-- Header Breadcrumbs Navigation -->
-            <div class="header-breadcrumbs" id="headerBreadcrumbs" style="display: none;">
-                <span class="breadcrumb-subj" id="bcSubject">-</span>
+            <div class="header-center" id="headerBreadcrumbs" style="display: none;">
+                <span class="breadcrumb-item" id="bcSubject">-</span>
                 <span class="breadcrumb-sep">/</span>
-                <span class="breadcrumb-sec" id="bcSection">-</span>
+                <span class="breadcrumb-item" id="bcSection">-</span>
                 <span class="breadcrumb-sep">/</span>
-                <span class="breadcrumb-active" id="bcVideo">-</span>
+                <span class="breadcrumb-item active" id="bcVideo">-</span>
             </div>
 
-            <div class="header-controls">
-                <div class="global-stat-box" title="Total Videos Completed">
-                    <span class="stat-icon">📈</span>
-                    <span id="globalHeaderStat">0/0 Completed</span>
+            <div class="header-right">
+                <div class="progress-pill" title="Total Videos Completed">
+                    <span class="progress-pill-dot"></span>
+                    <span id="globalHeaderStat">0/0</span>
                 </div>
-
-                <button class="theme-toggle" id="themeToggle" title="Toggle Theme">
+                <button class="icon-btn theme-toggle" id="themeToggle" title="Toggle Theme">
                     <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
@@ -64,232 +58,213 @@
             </div>
         </header>
 
-        <!-- MAIN LAYOUT WRAPPER -->
-        <div class="main-wrapper">
-            <!-- DYNAMIC SIDEBAR (Left) -->
+        <!-- ========== BODY ========== -->
+        <div class="app-body">
+            <!-- SIDEBAR -->
             <aside class="app-sidebar" id="appSidebar">
-                <div class="sidebar-dynamic-content" id="sidebarDynamicContent">
-                    <!-- Dynamic Dashboard Navigation or Subject accordion curriculum goes here -->
+                <div id="sidebarDynamicContent">
+                    <!-- Populated by JS -->
                 </div>
             </aside>
 
-            <!-- MAIN WORKSPACE CONTENT (Right) -->
-            <main class="content-panel">
-                
+            <!-- MAIN CONTENT -->
+            <main class="app-main">
+
                 <!-- 1. DASHBOARD VIEW -->
-                <div class="view-panel" id="dashboardView">
-                    
-                    <!-- STUDY SPOTLIGHT BILLBOARD (Netflix Banner style) -->
-                    <div class="study-spotlight-billboard" id="studySpotlightBillboard">
-                        <div class="billboard-content">
-                            <span class="billboard-badge">🔥 Current Subject</span>
-                            <h2 class="billboard-title" id="billboardSubjectTitle">Gastroenterology</h2>
-                            <div class="billboard-meta">
-                                <span class="billboard-match">99% Match for USMLE</span>
-                                <span class="billboard-year">2026 Edition</span>
-                                <span class="billboard-total-videos" id="billboardSubjectVideos">27 Videos</span>
-                            </div>
-                            <p class="billboard-desc" id="billboardSubjectDesc">Master gastrointestinal embryology, anatomy, physiology, and clinical pathology with interactive study notes and local playback tracking.</p>
-                            <div class="billboard-actions">
-                                <button class="btn btn-primary btn-billboard-play" id="billboardPlayBtn">
-                                    <span>▶</span> Resume Studying
-                                </button>
-                                <button class="btn btn-secondary btn-billboard-info" id="billboardInfoBtn">
-                                    <span>📋</span> View Curriculum
-                                </button>
+                <div class="view" id="dashboardView">
+                    <!-- Hero Card -->
+                    <div class="hero-card" id="heroCard">
+                        <div class="hero-text">
+                            <span class="hero-badge">📚 Current Focus</span>
+                            <h2 id="heroSubjectTitle">Gastroenterology</h2>
+                            <p id="heroSubjectDesc">Master gastrointestinal anatomy, physiology, and clinical pathology with structured study tracking.</p>
+                            <div class="hero-actions">
+                                <button class="btn-hero primary" id="heroPlayBtn">▶ Resume Studying</button>
+                                <button class="btn-hero secondary" id="heroInfoBtn">View Curriculum</button>
                             </div>
                         </div>
-                        <div class="billboard-progress">
-                            <div class="progress-ring-box">
-                                <svg class="progress-ring-svg" width="130" height="130">
-                                    <circle class="progress-ring-bg" cx="65" cy="65" r="55"></circle>
-                                    <circle class="progress-ring-fill" id="globalProgressRing" cx="65" cy="65" r="55"></circle>
-                                </svg>
-                                <div class="progress-ring-text">
-                                    <span id="globalProgressPercent">0%</span>
-                                    <span class="progress-ring-label">Completed</span>
-                                </div>
-                            </div>
+                        <div class="hero-progress">
+                            <svg width="100" height="100">
+                                <circle class="progress-ring-bg" cx="50" cy="50" r="42"></circle>
+                                <circle class="progress-ring-fill" id="globalProgressRing" cx="50" cy="50" r="42"></circle>
+                            </svg>
+                            <span class="ring-label" id="globalProgressPercent">0%</span>
+                            <span class="ring-sub">Completed</span>
                         </div>
                     </div>
 
-                    <!-- STUDY CAROUSELS -->
-                    <div class="dashboard-carousels">
-                        <!-- Continue watching carousel -->
-                        <div class="carousel-container" id="resumeSection" style="display: none;">
-                            <h3 class="carousel-title">Continue Studying</h3>
-                            <div class="carousel-row" id="resumeCard">
-                                <!-- Dynamic resume card -->
-                            </div>
+                    <!-- Stats Row -->
+                    <div class="stats-row" id="statsRow">
+                        <div class="stat-card">
+                            <div class="stat-label">Progress</div>
+                            <div class="stat-value" id="statProgress">0%</div>
+                            <div class="stat-sub">Overall completion</div>
                         </div>
-
-                        <!-- Subjects carousel -->
-                        <div class="carousel-container">
-                            <h3 class="carousel-title">Study Subjects</h3>
-                            <div class="carousel-row subjects-carousel" id="subjectsGrid">
-                                <!-- Dynamic subject cards -->
-                            </div>
+                        <div class="stat-card">
+                            <div class="stat-label">Videos Completed</div>
+                            <div class="stat-value" id="statCompleted">0</div>
+                            <div class="stat-sub" id="statCompletedSub">of 0 total</div>
                         </div>
+                        <div class="stat-card">
+                            <div class="stat-label">Subjects</div>
+                            <div class="stat-value" id="statSubjects">0</div>
+                            <div class="stat-sub">Available courses</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">Active Days</div>
+                            <div class="stat-value" id="statActiveDays">0</div>
+                            <div class="stat-sub">Days with study activity</div>
+                        </div>
+                    </div>
 
-                        <!-- Study consistency tracker grid (GitHub-style calendar) -->
-                        <div class="carousel-container">
-                            <h3 class="carousel-title">Study Consistency Calendar</h3>
-                            <div class="consistency-calendar-card">
-                                <div class="calendar-header-meta">
-                                    <span class="calendar-meta-title">Daily watched videos (Last 365 Days)</span>
-                                    <div class="calendar-legend">
-                                        <span>Less</span>
-                                        <div class="legend-box level-0"></div>
-                                        <div class="legend-box level-1"></div>
-                                        <div class="legend-box level-2"></div>
-                                        <div class="legend-box level-3"></div>
-                                        <span>More</span>
-                                    </div>
-                                </div>
-                                <div class="study-contribution-grid" id="studyContributionGrid">
-                                    <!-- Populated dynamically by JS -->
+                    <!-- Resume Section -->
+                    <div class="resume-section" id="resumeSection" style="display: none;">
+                        <h3 class="section-heading">Continue Studying</h3>
+                        <div id="resumeCard"></div>
+                    </div>
+
+                    <!-- Subject Grid -->
+                    <h3 class="section-heading">Study Subjects</h3>
+                    <div class="subject-grid" id="subjectsGrid">
+                        <!-- Dynamic subject cards -->
+                    </div>
+
+                    <!-- Contribution Calendar -->
+                    <div class="calendar-section">
+                        <h3 class="section-heading">Study Activity</h3>
+                        <div class="calendar-card">
+                            <div class="calendar-header">
+                                <span class="cal-title">Daily videos watched — Last 365 days</span>
+                                <div class="calendar-legend">
+                                    <span>Less</span>
+                                    <div class="legend-box l0"></div>
+                                    <div class="legend-box l1"></div>
+                                    <div class="legend-box l2"></div>
+                                    <div class="legend-box l3"></div>
+                                    <span>More</span>
                                 </div>
                             </div>
+                            <div class="contrib-grid" id="studyContributionGrid"></div>
                         </div>
                     </div>
                 </div>
 
-                <!-- 2. SUBJECT DETAILS & VIDEO VIEW (Cinema-Style Immersive Workspace) -->
-                <div class="view-panel" id="subjectView" style="display: none;">
-                    <div class="cinema-study-workspace">
-                        
-                        <!-- Dynamic Background Ambient Glow (Behind the Video Player) -->
-                        <div class="ambient-glow-backdrop" id="ambientGlowBackdrop"></div>
-
-                        <!-- ACTIVE VIDEO CARD (Central Player) -->
-                        <div class="video-card">
-                            <div class="video-card-header">
-                                <span class="section-label" id="videoSectionLabel">-</span>
-                                <h3 class="active-video-title" id="videoTitleLabel">Select a video to begin</h3>
+                <!-- 2. STUDY VIEW -->
+                <div class="view" id="subjectView" style="display: none;">
+                    <div class="study-workspace">
+                        <!-- Video Player Card -->
+                        <div class="player-card">
+                            <div class="player-top-bar">
+                                <div class="ptb-left">
+                                    <span class="ptb-section-label" id="videoSectionLabel">—</span>
+                                    <h3 class="ptb-video-title" id="videoTitleLabel">Select a video to begin</h3>
+                                </div>
+                                <span class="ptb-duration" id="videoDurationLabel">00:00</span>
                             </div>
 
-                            <!-- Aspect-Ratio Video Container -->
-                            <div class="player-container">
-                                <div class="local-player-wrapper">
-                                    <video id="localVideoNode" controls></video>
-                                    
-                                    <!-- File Dropzone -->
-                                    <div class="file-dropzone" id="fileDropzone">
-                                        <div class="placeholder-content">
-                                            <span class="placeholder-icon">🎞️</span>
-                                            <h4>Local Video File Not Found</h4>
-                                            <p>Place this video in the <code>videos/gastroenterology/</code> folder, or click below to manually link it.</p>
-                                            <input type="file" id="localFilePicker" accept="video/*" style="display: none;">
-                                            <button class="btn btn-primary" id="browseFilesBtn">Browse Local Files</button>
-                                        </div>
+                            <div class="player-viewport">
+                                <video id="localVideoNode" controls></video>
+                                <div class="file-dropzone" id="fileDropzone">
+                                    <div class="dropzone-content">
+                                        <span class="dz-icon">🎬</span>
+                                        <h4>Video File Not Found</h4>
+                                        <p>Place this video in the <code>videos/</code> folder, or click to browse.</p>
+                                        <input type="file" id="localFilePicker" accept="video/*" style="display: none;">
+                                        <button class="btn-browse" id="browseFilesBtn">Browse Files</button>
                                     </div>
                                 </div>
-                                
-                                <!-- Linked File Status Bar -->
-                                <div class="file-status-bar" id="fileStatusBar" style="display: none;">
-                                    <span class="file-name-label" id="linkedFileName">No file linked</span>
-                                    <button class="change-file-btn" id="changeLocalFileBtn">Change Local File</button>
-                                </div>
                             </div>
 
-                            <!-- Controls Row -->
-                            <div class="player-actions-row">
-                                <button class="watched-toggle-btn" id="videoCompletedToggle">
-                                    <span class="check-box-icon"></span>
-                                    Mark as Completed
-                                </button>
+                            <div class="file-status" id="fileStatusBar" style="display: none;">
+                                <span class="fs-name" id="linkedFileName">No file linked</span>
+                                <button class="btn-change-file" id="changeLocalFileBtn">Change</button>
+                            </div>
 
-                                <div class="prev-next-nav">
-                                    <button class="btn btn-secondary" id="prevVideoBtn" disabled>
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                                            <polyline points="15 18 9 12 15 6"></polyline>
-                                        </svg>
+                            <div class="player-controls">
+                                <button class="mark-complete-btn" id="videoCompletedToggle">
+                                    <span class="mc-check"></span>
+                                    Mark Completed
+                                </button>
+                                <div class="nav-btns">
+                                    <button class="nav-btn" id="prevVideoBtn" disabled>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
                                         Previous
                                     </button>
-                                    <button class="btn btn-primary" id="nextVideoBtn" disabled>
+                                    <button class="nav-btn primary-nav" id="nextVideoBtn" disabled>
                                         Next
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                                            <polyline points="9 18 15 12 9 6"></polyline>
-                                        </svg>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
                                     </button>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- WORKSPACE TAB PANELS -->
-                        <div class="workspace-tabs-container">
-                            <div class="study-tabs">
-                                <button class="tab-btn active" data-tab="paneNotes">📝 Study Notes</button>
-                                <button class="tab-btn" data-tab="paneHighYield">💡 High-Yield Pearls</button>
-                                <button class="tab-btn" data-tab="paneResources">⚙️ Resources & Backup</button>
+                        <!-- Workspace Tabs -->
+                        <div class="workspace-card">
+                            <div class="tab-bar">
+                                <button class="tab-btn active" data-tab="paneNotes">📝 Notes</button>
+                                <button class="tab-btn" data-tab="paneHighYield">💡 High-Yield</button>
+                                <button class="tab-btn" data-tab="paneResources">⚙️ Resources</button>
                             </div>
 
-                            <!-- TAB 1: STUDY NOTES -->
+                            <!-- Tab 1: Notes -->
                             <div class="tab-pane active" id="paneNotes">
-                                <div class="notes-editor-wrapper">
-                                    <div class="notes-header">
-                                        <div class="markdown-toolbar">
-                                            <button class="tool-btn" id="btnBold" title="Bold (Ctrl+B)"><b>B</b></button>
-                                            <button class="tool-btn" id="btnItalic" title="Italic (Ctrl+I)"><i>I</i></button>
-                                            <button class="tool-btn" id="btnHeading" title="Add Heading">H</button>
-                                            <span class="tool-sep">|</span>
-                                            <button class="tool-btn" id="btnBulletList" title="Bullet List">• List</button>
-                                            <button class="tool-btn" id="btnCode" title="Code Block">Code</button>
-                                            <button class="tool-btn" id="btnHighYield" title="Highlight High-Yield">⭐ High-Yield</button>
+                                <div class="notes-wrap">
+                                    <div class="notes-toolbar">
+                                        <div class="md-buttons">
+                                            <button class="md-btn" id="btnBold" title="Bold"><b>B</b></button>
+                                            <button class="md-btn" id="btnItalic" title="Italic"><i>I</i></button>
+                                            <button class="md-btn" id="btnHeading" title="Heading">H</button>
+                                            <span class="md-sep"></span>
+                                            <button class="md-btn" id="btnBulletList" title="List">• List</button>
+                                            <button class="md-btn" id="btnCode" title="Code">Code</button>
+                                            <button class="md-btn" id="btnHighYield" title="High-Yield">⭐ HY</button>
                                         </div>
-                                        <span class="save-indicator" id="notesSaveStatus">Saved</span>
+                                        <span class="save-status" id="notesSaveStatus">Saved</span>
                                     </div>
-                                    <textarea id="studyNotesTextarea" placeholder="Write summaries, high-yield terms, formulas, or key clinical concepts for this video... Notes are autosaved. Support markdown format."></textarea>
+                                    <textarea id="studyNotesTextarea" placeholder="Write study notes, key concepts, and high-yield facts for this video..."></textarea>
                                 </div>
                             </div>
 
-                            <!-- TAB 2: HIGH-YIELD PEARLS -->
+                            <!-- Tab 2: High-Yield -->
                             <div class="tab-pane" id="paneHighYield">
-                                <div class="high-yield-content">
-                                    <div class="yield-section">
-                                        <h4>🎯 Diagnostic Key Concepts</h4>
-                                        <div class="pearl-bullet-list" id="pearlDiagnosticKeys">
-                                            <div class="pearl-item">
-                                                <span class="pearl-badge badge-primary">Embryology</span>
-                                                <p><strong>Hernias:</strong> Congenital umbilical hernias occur due to failure of bowel to return to abdominal cavity after physiological herniation; covered by skin. Omphalocele involves herniation into umbilical cord (covered by sac).</p>
+                                <div class="hy-content">
+                                    <div class="hy-section">
+                                        <h4>🎯 Key Concepts</h4>
+                                        <div id="pearlDiagnosticKeys">
+                                            <div class="pearl">
+                                                <span class="pearl-tag tag-primary">Embryology</span>
+                                                <p><strong>Hernias:</strong> Congenital umbilical hernias occur due to failure of bowel to return to abdominal cavity after physiological herniation.</p>
                                             </div>
-                                            <div class="pearl-item">
-                                                <span class="pearl-badge badge-danger">High Yield</span>
-                                                <p><strong>Wilson's Disease:</strong> Autosomal recessive mutation in ATP7B copper transporter. Characterized by Kayser-Fleischer rings, liver disease, neurological disorders, and low ceruloplasmin.</p>
+                                            <div class="pearl">
+                                                <span class="pearl-tag tag-danger">High Yield</span>
+                                                <p><strong>Wilson's Disease:</strong> Autosomal recessive mutation in ATP7B copper transporter. Kayser-Fleischer rings, liver disease, low ceruloplasmin.</p>
                                             </div>
-                                            <div class="pearl-item">
-                                                <span class="pearl-badge badge-warning">Physiology</span>
-                                                <p><strong>Bile & Bilirubin:</strong> Conjugated bilirubin is water soluble and excreted in bile. Unconjugated bilirubin is lipid soluble, bound to albumin, and cannot be excreted in urine.</p>
+                                            <div class="pearl">
+                                                <span class="pearl-tag tag-warning">Physiology</span>
+                                                <p><strong>Bile & Bilirubin:</strong> Conjugated bilirubin is water soluble and excreted in bile. Unconjugated is lipid soluble, bound to albumin.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- TAB 3: RESOURCES & BACKUP (Formerly settings panel content) -->
+                            <!-- Tab 3: Resources -->
                             <div class="tab-pane" id="paneResources">
-                                <div class="resources-panel-grid">
-                                    <div class="resources-card">
+                                <div class="resources-grid">
+                                    <div class="res-card">
                                         <h3>Data Management</h3>
-                                        <p>Export your studying data (watched status, custom local video links, study notes) to a backup file, or restore from a previously exported profile.</p>
-                                        <div class="resources-actions">
-                                            <button class="btn btn-primary" id="exportDataBtn">
-                                                📥 Export Backup File
-                                            </button>
-                                            <button class="btn btn-secondary" id="importBtnTrigger">
-                                                📤 Import Backup File
-                                            </button>
+                                        <p>Export or import your study progress, notes, and video configurations.</p>
+                                        <div class="res-actions">
+                                            <button class="btn btn-primary" id="exportDataBtn">📥 Export Backup</button>
+                                            <button class="btn btn-secondary" id="importBtnTrigger">📤 Import Backup</button>
                                             <input type="file" id="importFileSelector" accept=".json" style="display: none;">
                                         </div>
                                     </div>
-
-                                    <div class="resources-card danger-zone">
+                                    <div class="res-card danger-zone">
                                         <h3>Danger Zone</h3>
-                                        <p>Resetting will delete all your study progress, saved notes, and local video associations. This action is irreversible.</p>
-                                        <div class="resources-actions">
-                                            <button class="btn btn-danger" id="resetAllProgressBtn">
-                                                ⚠️ Reset All Progress Data
-                                            </button>
+                                        <p>Permanently delete all progress, notes, and configurations. This cannot be undone.</p>
+                                        <div class="res-actions">
+                                            <button class="btn btn-danger" id="resetAllProgressBtn">⚠️ Reset All Data</button>
                                         </div>
                                     </div>
                                 </div>
@@ -298,35 +273,27 @@
                     </div>
                 </div>
 
-                <!-- 3. GLOBAL SETTINGS VIEW -->
-                <div class="view-panel" id="settingsView" style="display: none;">
-                    <h2 class="view-title">⚙️ System Settings</h2>
-                    <div class="settings-container">
+                <!-- 3. SETTINGS VIEW -->
+                <div class="view" id="settingsView" style="display: none;">
+                    <div class="settings-page">
+                        <h2 class="view-title">⚙️ Settings</h2>
                         <div class="settings-card info-card">
-                            <h3>Local Videos Setup Guide</h3>
-                            <p>To configure your video files for seamless native playback, follow these instructions:</p>
-                            <div class="info-list">
-                                <div class="info-item">
-                                    <strong>Step 1:</strong> Locate your downloaded videos from the Telegram channel.
-                                </div>
-                                <div class="info-item">
-                                    <strong>Step 2:</strong> Copy the files to the **`raw_downloads`** folder inside the **`Exam-blanc`** directory.
-                                </div>
-                                <div class="info-item">
-                                    <strong>Step 3:</strong> Run the Sorter renamer script **`python sort_local_videos.py`**. The script will automatically structure your files under the **`videos/`** folder.
-                                </div>
-                                <div class="info-item">
-                                    <strong>Step 4:</strong> Reload the web app. The video player will auto-detect the files and play them natively.
-                                </div>
+                            <h3>Local Videos Setup</h3>
+                            <p>Configure your video files for native local playback.</p>
+                            <div class="info-steps">
+                                <div class="info-step"><strong>Step 1:</strong> Locate your downloaded videos from the Telegram channel.</div>
+                                <div class="info-step"><strong>Step 2:</strong> Copy the files to the <strong>raw_downloads</strong> folder inside the Exam-blanc directory.</div>
+                                <div class="info-step"><strong>Step 3:</strong> Run <code>python sort_local_videos.py</code> to auto-organize files under <strong>videos/</strong>.</div>
+                                <div class="info-step"><strong>Step 4:</strong> Reload this page. Videos will be auto-detected and play natively.</div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </main>
         </div>
     </div>
 
-    <!-- Script files -->
     <script src="app.js"></script>
     <script src="ui.js"></script>
 </body>
